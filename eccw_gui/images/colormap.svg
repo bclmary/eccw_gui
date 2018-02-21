@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="80mm"
+   height="180mm"
+   viewBox="0 0 80 180"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="colormap.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="196.87816"
+     inkscape:cy="127.83053"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-117)">
+    <image
+       y="180.4492"
+       x="45.546913"
+       id="image4504"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAAUCAYAAAAHg9NlAAAABHNCSVQICAgIfAhkiAAAAZ1JREFU eJzt1ctygzAMheEjk8uy7/+ogVy6CBayDUy2mvm/jcWxMLR0KpP0kaQ/3XTXTZJ0XdeL7rp4/V2n sBbdm6zo1tR13errT3vm9XEWr7f64nuxrnvm2aXrj3vTd8+mITNNKl6XYW/LynpGGTKTNXWzmoVM oV9tZhozXz8y+3jtmbrM3iF7e7Zd1/oV+l9d9hoyWb1+hr5nyJ5rX8i8Xrr+RfJs8SzW32IJ987d 3jzu2RzOrf2z1wpZ7am17DFk232P5jx/fv2drB+pfitZyMKHjN/5rK9ee6adbK+vO8tMWv8k22yv 7+g9ysEzy84zwz3Dz9lne+eWdv+oPz57eI+y8zOX8QzvOeov473e0+0d9Q/37uyd9k8n71Gk9V9U e8ZJ1px7tvdrn77v4M+awl7/HlN7z3DGzl7N6hEAAKTFMAMApMcwAwCkxzADAKTHMAMApMcwAwCk xzADAKTHMAMApMcwAwCkxzADAKTHMAMApMcwAwCkxzADAKTHMAMApMcwAwCkxzADAKTHMAMApMcw AwCkxzADAKT3D9NsQCWvT4JwAAAAAElFTkSuQmCC "
+       preserveAspectRatio="none"
+       height="9.1440001"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_gnuplot.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       id="text4524"
+       y="186.80237"
+       x="12.00586"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:7.05555534px;stroke-width:0.26458332"
+         y="186.80237"
+         x="12.00586"
+         id="tspan4522"
+         sodipodi:role="line">gnuplot</tspan></text>
+    <image
+       y="129.85948"
+       x="45.565872"
+       id="image4572"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbIAAAATCAYAAAD1RIjjAAAABHNCSVQICAgIfAhkiAAAAMBJREFU eJzt1dEKgzAQBMC7/P8/t0+FgmKTVrELM0+SxFxyiNtV9aiq6u7q7no9H42trr9zj5cxxmbdp7kx xm7NlbmrzrH37kw/Zu5w1O+ZWit3X6k1c79/7MdRj87Y4+qefnuOlVq/nuO93p3/lLN7utdH38d2 bBQABBNkAEQTZABEE2QARBNkAEQTZABEE2QARBNkAEQTZABEE2QARBNkAEQTZABEE2QARBNkAEQT ZABEE2QARBNkAEQTZABEewKlFQQi0p772QAAAABJRU5ErkJggg== "
+       preserveAspectRatio="none"
+       height="9.2213392"
+       width="16.448915"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_gray.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="23.109409"
+       y="135.71214"
+       id="text4577"><tspan
+         sodipodi:role="line"
+         id="tspan4575"
+         x="23.109409"
+         y="135.71214"
+         style="font-size:7.05555534px;stroke-width:0.26458332">gray</tspan></text>
+    <image
+       y="163.55473"
+       x="45.546913"
+       id="image4587"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAAUCAYAAAAHg9NlAAAABHNCSVQICAgIfAhkiAAAAOhJREFU eJzt1VsOgjAUBcAL+98zfigECEgRSDzJzFdNn7c0nq5qGKqqqhuquqqpXfX+PW+39P3bGvXp6zfG HfX1G3vN57T0PXWOsT3qT97pes7e+kfzpnHr8TtnvLLXXi2P38ewrOvbvNb3fOcaP9/pfHzjGmfO sa7rzlq29hr3+/YW7zjHYq8Hajn6Zltv8ZH3cXMtV95iwznGv0kAiCXMAIgnzACIJ8wAiCfMAIgn zACIJ8wAiCfMAIgnzACIJ8wAiCfMAIgnzACIJ8wAiCfMAIgnzACIJ8wAiCfMAIgnzACIJ8wAiPcC gZCCpZ3Dri0AAAAASUVORK5CYII= "
+       preserveAspectRatio="none"
+       height="9.1440001"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_winter.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       id="text4592"
+       y="170.69098"
+       x="16.567167"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:7.05555534px;stroke-width:0.26458332"
+         y="170.69098"
+         x="16.567167"
+         sodipodi:role="line"
+         id="tspan4594">winter</tspan></text>
+    <image
+       y="146.66032"
+       x="45.546913"
+       id="image4606"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAAUCAYAAAAHg9NlAAAABHNCSVQICAgIfAhkiAAAAMxJREFU eJzt1UEKwjAQBdCpceX976sLLRTRNMG6+OW9TegQ0sm08Jdb1b2qqlXVpZ7aZn2vbZ9Ha5/OXff0 anvn9nocfVevR/P4/zyWbxecbXxmIDND6l3mLD/NWebc63FmHsulqq6vh+06WpvZ3w44Y7SPtrP/ yD7a5P7f+1g/IwDEEmYAxBNmAMQTZgDEE2YAxBNmAMQTZgDEE2YAxBNmAMQTZgDEE2YAxBNmAMQT ZgDEE2YAxBNmAMQTZgDEE2YAxBNmAMQTZgDEewBQIAQkdvtqMwAAAABJRU5ErkJggg== "
+       preserveAspectRatio="none"
+       height="9.1440001"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_hot.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       id="text4611"
+       y="153.89575"
+       x="27.398556"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:7.05555534px;stroke-width:0.26458332"
+         y="153.89575"
+         x="27.398556"
+         id="tspan4609"
+         sodipodi:role="line">hot</tspan></text>
+    <image
+       y="264.35501"
+       x="45.565872"
+       id="image4647"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbIAAAATCAYAAAD1RIjjAAAABHNCSVQICAgIfAhkiAAAAX9JREFU eJzt1UuSwzAIRdGHtLVeQu9/KVYPLKO/OxlSdc8kGDCSBynsx36LJMlMsnSHyVQDqcZmNZeSvL/G rdZmyGesOe/vZmjI2ZqrcXmpjWfWfq9N7/xba/O8z6Z6f4809T3veSy/4/xue57erbmSuvppbv+8 mbvvW89aa+cZx7les8/6X2d8ceZhxme5sj3reMdjX/ni+8pSu7+vLLn2fZvaS842Z9nUb32/up5p hlkZ4vF3k5OUlr7S/U3vXBpq4z1Sn+v6n1zSS63rSXaNuc2MVruUN7VnRn6Zm3Ut8/tcfvrr3GzX ED/n3++VIfa7aT2zzR3vmHUtM+4zL4/9rE1uPnPMlSlXWuxnlW6+ak61R8qesy5X45rzZ6WuL9Vf U7bkswEACIlFBgAIjUUGAAiNRQYACI1FBgAIjUUGAAiNRQYACI1FBgAIjUUGAAiNRQYACI1FBgAI jUUGAAiNRQYACI1FBgAIjUUGAAiNRQYACI1FBgAIjUUGAAjtD9aIiS0BCgy/AAAAAElFTkSuQmCC  "
+       preserveAspectRatio="none"
+       height="8.9540691"
+       width="16.448915"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_viridis.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       id="text4652"
+       y="271.46237"
+       x="18.024446"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:7.05555534px;stroke-width:0.26458332"
+         y="271.46237"
+         x="18.024446"
+         id="tspan4650"
+         sodipodi:role="line">viridis</tspan></text>
+    <image
+       y="247.49792"
+       x="45.546913"
+       id="image4662"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAAUCAYAAAAHg9NlAAAABHNCSVQICAgIfAhkiAAAAYZJREFU eJzt1ctOw0AMheFzXCQ2PDePXbNI08zFhbK09H+rYLseT1phf31+pyR9yLplSJJCliTdZN0ez2cs 8vo71lwVS5V1kmRZx4lzzlnEirqjxziThr5FLK/nMRdFzOkpv867zuOp7vrcmL/OWvsOOe+58Pl8 XCA8fMZLD+ezx9XrisXj5dpSxFmXc73zGXv2d9Uj5dhjv9YvdRHaYtfZe/1x5jyvneX5e/3rOcpY 7Hf5s8ebZ53zV2fprdn0z/p8/kjKed64s4r7yUV9DPXe69fvb5q/eH/rbCrem96sV/Ge1zPlva8i 9zvH2EOvc8V3oLH/eoexVzFH3UN73TlXNeMjn9M/q+v+Y31OZ56xos5Lfst5zlnK8Fa3fXaqH2aS JN+VcZ+uBwBAWywzAEB7LDMAQHssMwBAeywzAEB7LDMAQHssMwBAeywzAEB7LDMAQHssMwBAeywz AEB7LDMAQHssMwBAeywzAEB7LDMAQHssMwBAeywzAEB7LDMAQHssMwBAez/Qbp8vsCRCgwAAAABJ RU5ErkJggg== "
+       preserveAspectRatio="none"
+       height="9.1440001"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_plasma.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.786977"
+       y="253.98332"
+       id="text4667"><tspan
+         sodipodi:role="line"
+         id="tspan4665"
+         x="13.786977"
+         y="253.98332"
+         style="font-size:7.05555534px;stroke-width:0.26458332">plasma</tspan></text>
+    <image
+       y="230.60341"
+       x="45.546913"
+       id="image4677"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAAUCAYAAAAHg9NlAAAABHNCSVQICAgIfAhkiAAAAaxJREFU eJzt1UlywzAMRNEGpNz/xkIW4gBSTPao+m9jGmwOUlKGSVdIkmSSvI2slTzVrlSTTC5r45ExH7k+ 99Z8rbWML3PX2NfTuK9zrbX8fc+75j08Zs3ln1zPnOY8bMnZ+9St9t+cZs3WvEmp1nLpe5+z/mZt /j3c5ts201LLmblv3mPPp/1S7a+8Kw5nrnd6z4zDHeOQj3HH09pxj61mFmk+7xvHPY75VJv5+Nx3 3jHS2vw+YrvHIWexnJHPXPeNbz7t+6nlPbyPn1E75W0/K63b58y/efPne77n/Z/20Knm3z1Oa991 zzGvPe8h9Wf1vjY9y1477JHPkh3yI6d5n60mHz+HS60tWP+RJcl9Hfe5Md4+zc9zbRx+fWpqtVjy e+1KtbnHHO9z1xzbPef83vL3Ok55+T3zo/YzamZzzrba+PR7jH3MXWPcXzcAAGXRzAAA5dHMAADl 0cwAAOXRzAAA5dHMAADl0cwAAOXRzAAA5dHMAADl0cwAAOXRzAAA5dHMAADl0cwAAOXRzAAA5dHM AADl0cwAAOXRzAAA5dHMAADl0cwAAOX9AlpCbMXqHUXaAAAAAElFTkSuQmCC "
+       preserveAspectRatio="none"
+       height="9.1440001"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_inferno.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       id="text4682"
+       y="237.8719"
+       x="14.338192"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:7.05555534px;stroke-width:0.26458332"
+         y="237.8719"
+         x="14.338192"
+         id="tspan4680"
+         sodipodi:role="line">inferno</tspan></text>
+    <image
+       y="213.90852"
+       x="45.546913"
+       id="image4692"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAATCAYAAAAahuPdAAAABHNCSVQICAgIfAhkiAAAAYlJREFU eJzt1cEOwyAIgGFg7//M7NAqoCzZleT/LrWIaNstqMjHRUREVETsHekbsojpc833+o5F1zrbeZrz duxTatW5HPtcMdvje27VtbTPmre05xVL9zFuYh5ze6+d97wrdUuxmNMj7zmFlvec51RrTEXEzpjW camhkmpI5K9PmvPe+TW39tEUi/pp3OTlvX7VL/lN7P98v/Kv/fOzi/+u+85pqhF5sS72yrFa93lH XvY39Wttvr/38nT2bq/zWTzqatSNc6Tn23m1luZzlFitW2LmR37ErIntGuYiVyzq7/F+gX7lidVx riWm95xJ/Ugios0PVHPO8cNTa34gz5/tWJuubew4sGlaa79rqN01urp/5VuTFzG3FNvP2cT+yrOo 2e7Z5Hd57/U6m0aN9XkAABiLZgYAGI9mBgAYj2YGABiPZgYAGI9mBgAYj2YGABiPZgYAGI9mBgAY j2YGABiPZgYAGI9mBgAYj2YGABiPZgYAGI9mBgAYj2YGABiPZgYAGI9mBgAY7wuZiS7bW8f+ewAA AABJRU5ErkJggg== "
+       preserveAspectRatio="none"
+       height="9.0094223"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_magma.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="12.546742"
+       y="219.68831"
+       id="text4697"><tspan
+         sodipodi:role="line"
+         id="tspan4695"
+         x="12.546742"
+         y="219.68831"
+         style="font-size:7.05555534px;stroke-width:0.26458332">magma</tspan></text>
+    <image
+       y="197.30634"
+       x="45.546913"
+       id="image4707"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAATCAYAAAAahuPdAAAABHNCSVQICAgIfAhkiAAAAO1JREFU eJzt1dGKwjAQBdAxiW/u//9t9cEqkk00IrIMew6UhMl00pdyDxFxjoiIaPsT3Tqqvdv/lzPqvh4H fa/OjoO5j++snH3jO+r9jX5C7fazWpv0PZuxeld/1l70z2bMvnH1roiIetiilu26f1j7WhvUnvXX skVb7Bvd9U7/7K6VGWVfo2zX57bv109qZvzTGbe/7GdfT91+5ayvrc74XSsBAMkJMwDSE2YApCfM AEhPmAGQnjADID1hBkB6wgyA9IQZAOkJMwDSE2YApCfMAEhPmAGQnjADID1hBkB6wgyA9IQZAOkJ MwDSuwCzWIMia951CQAAAABJRU5ErkJggg== "
+       preserveAspectRatio="none"
+       height="8.9540691"
+       width="16.486813"
+       style="stroke-width:2.00995159"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_gnuplot2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05555534px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="8.0508919"
+       y="203.59758"
+       id="text4712"><tspan
+         sodipodi:role="line"
+         id="tspan4710"
+         x="8.0508919"
+         y="203.59758"
+         style="font-size:7.05555534px;stroke-width:0.26458332">gnuplot2</tspan></text>
+    <rect
+       ry="0.77557218"
+       rx="0.74212933"
+       y="146.70804"
+       x="45.390945"
+       height="9.048583"
+       width="16.798765"
+       id="rect4512"
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_hot.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4514"
+       width="16.798765"
+       height="9.048583"
+       x="45.390945"
+       y="163.60245"
+       rx="0.74212933"
+       ry="0.77557218"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_winter.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4516"
+       width="16.798765"
+       height="9.048583"
+       x="45.390945"
+       y="129.94586"
+       rx="0.74212933"
+       ry="0.77557218"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_gray.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       ry="0.77557218"
+       rx="0.74212933"
+       y="180.49692"
+       x="45.390945"
+       height="9.048583"
+       width="16.798765"
+       id="rect4518"
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_gnuplot.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4520"
+       width="16.798765"
+       height="9.048583"
+       x="45.390945"
+       y="197.25908"
+       rx="0.74212933"
+       ry="0.77557218"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_gnuplot2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       ry="0.77557218"
+       rx="0.74212933"
+       y="213.88895"
+       x="45.390945"
+       height="9.048583"
+       width="16.798765"
+       id="rect4522"
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_magma.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4524"
+       width="16.798765"
+       height="9.048583"
+       x="45.390945"
+       y="230.65112"
+       rx="0.74212933"
+       ry="0.77557218"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_inferno.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       ry="0.77557218"
+       rx="0.74212933"
+       y="247.54564"
+       x="45.390945"
+       height="9.048583"
+       width="16.798765"
+       id="rect4526"
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_plasma.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.03859648;stroke:#000000;stroke-width:0.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4528"
+       width="16.798765"
+       height="9.048583"
+       x="45.390945"
+       y="264.30777"
+       rx="0.74212933"
+       ry="0.77557218"
+       inkscape:export-filename="/home/bmary/Programmation/eccw/eccw/images/icon_colormap_viridis.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=2.0.0
+Type=Application
+Name=ECCW
+GenericName=ECCW
+Comment=Exact Critical Coulomb Wedge : tools to compute and display the exact solution of any parameter of Critical Coulomb Wedge
+TryExec=eccw
+Exec=eccw
+Categories=Geology;Science;Qt;
+Icon=icon_eccw_128x128
+Terminal=false
+StartupNotify=true
+MimeType=text/eccw

@@ -1,0 +1,72 @@
+<RCC>
+  <qresource prefix="lines">
+    <file>line_continuous.png</file>
+    <file>line_dash_dotted.png</file>
+    <file>line_dashed.png</file>
+    <file>line_dotted.png</file>
+  </qresource>
+  <qresource prefix="illustrations">
+    <file>illustration_calculator.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>python-powered-60x24.png</file>
+    <file>icon_eccw_16x16.png</file>
+    <file>icon_eccw_24x24.png</file>
+    <file>icon_eccw_32x32.png</file>
+    <file>icon_eccw_48x48.png</file>
+    <file>icon_eccw_256x256.png</file>
+    <file>icon_eccw_512x512.png</file>
+    <file>icon_eccw_128x128.png</file>
+    <file>Qt_logo_24x33.png</file>
+  </qresource>
+  <qresource prefix="markers">
+    <file>marker_circle.png</file>
+    <file>marker_cross.png</file>
+    <file>marker_diamond.png</file>
+    <file>marker_pentagone.png</file>
+    <file>marker_square.png</file>
+    <file>marker_star.png</file>
+    <file>marker_triangle.png</file>
+  </qresource>
+  <qresource prefix="buttons">
+    <file>button_about.png</file>
+    <file>button_close.png</file>
+    <file>button_compression.png</file>
+    <file>button_compute.png</file>
+    <file>button_documentation.png</file>
+    <file>button_export.png</file>
+    <file>button_extension.png</file>
+    <file>button_go.png</file>
+    <file>button_open.png</file>
+    <file>button_plotAll.png</file>
+    <file>button_plotOne.png</file>
+    <file>button_range_off.png</file>
+    <file>button_range_on.png</file>
+    <file>button_save.png</file>
+  </qresource>
+  <qresource prefix="colormaps">
+    <file>colormap_gnuplot.png</file>
+    <file>colormap_gnuplot2.png</file>
+    <file>colormap_gray.png</file>
+    <file>colormap_hot.png</file>
+    <file>colormap_inferno.png</file>
+    <file>colormap_magma.png</file>
+    <file>colormap_plasma.png</file>
+    <file>colormap_viridis.png</file>
+    <file>colormap_winter.png</file>
+  </qresource>
+  <qresource prefix="params">
+    <file>params_alpha.png</file>
+    <file>params_beta.png</file>
+    <file>params_lamdaB.png</file>
+    <file>params_lamdaD.png</file>
+    <file>params_phiB.png</file>
+    <file>params_phiD.png</file>
+    <file>params_rhof.png</file>
+    <file>params_rhosr.png</file>
+  </qresource>
+  <qresource prefix="tabs">
+    <file>tab_calculate.png</file>
+    <file>tab_plot.png</file>
+  </qresource>
+</RCC>

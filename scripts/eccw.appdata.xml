@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>eccw.desktop</id>
+  <name>ECCW</name>
+  <summary>Exact Critical Coulomb Wedge : tools to compute and display the exact solution of any parameter of Critical Coulomb Wedge</summary>
+
+  <metadata_license>GNU GPL-3.0+</metadata_license>
+  <project_license>GNU GPL-3.0+</project_license>
+  <developer_name>ECCW Project Contributors</developer_name>
+
+  <description>
+    <p>
+      Exact Critical Coulomb Wedge : tools to compute and display the exact solution of any parameter of Critical Coulomb Wedge
+    </p>
+  </description>
+<!--  <screenshots>-->
+<!--​    <screenshot type="default">-->
+<!--​      <image>https://raw.githubusercontent.com/spyder-ide/spyder/master/img_src/screenshot.png</image>-->
+<!--​    </screenshot>-->
+<!--​  </screenshots>-->
+</component>

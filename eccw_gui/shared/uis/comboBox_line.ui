@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>130</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QComboBox" name="comboBox">
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>130</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>130</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Line style</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>continuous</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../images/ressources.qrc">
+        <normaloff>:/lines/line_continuous.png</normaloff>:/lines/line_continuous.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dotted</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../images/ressources.qrc">
+        <normaloff>:/lines/line_dotted.png</normaloff>:/lines/line_dotted.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dashed</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../images/ressources.qrc">
+        <normaloff>:/lines/line_dashed.png</normaloff>:/lines/line_dashed.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dash dotted</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../images/ressources.qrc">
+        <normaloff>:/lines/line_dash_dotted.png</normaloff>:/lines/line_dash_dotted.png</iconset>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../images/ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

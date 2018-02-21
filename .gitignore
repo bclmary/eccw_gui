@@ -1,0 +1,7 @@
+# Ignore compiled python modules.
+*.pyc
+
+# Ignore dist and build
+dist/
+build/
+*.egg-info/

@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Usage}{}% 1
+\BOOKMARK [1][-]{section.2}{Understand ECCW}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The critical coulomb wedge theory.}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Criticality.}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Motor of faulting}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Compute ECCW}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Critical prism theory}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{The exact implicit solution}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Fault slopes at criticality}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Solve ECCW}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Newton's method}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.6}{Adaptation of Newton's method to a set of functions}{section.3}% 12
