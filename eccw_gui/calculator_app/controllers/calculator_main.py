@@ -252,7 +252,7 @@ class CalculatorController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         for elt in self.param_list_all:
             value = select[elt]['value']
             if elt == focus:
-                value = "<span style='color: red'>⯅</span>"
+                value = "<span style='color: red'>▲</span>"
             elif value is None:
                 value = "-"
             elif select[elt]["type"] == "range":
