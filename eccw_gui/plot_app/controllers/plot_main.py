@@ -12,6 +12,7 @@ from eccw_gui.plot_app.controllers.curve_settings import CurveController
 from eccw_gui.plot_app.controllers.point_settings import RefPointSettings
 from eccw_gui.plot_app.controllers.title_settings import TitleEdit
 from eccw_gui.plot_app.controllers.dialog_errors import Errors
+from eccw_gui.plot_app.controllers.plot_window import PlotWindow
 from eccw_gui.shared.wrappers import Wrapper, WrapperDict, WrapperList
 from eccw_gui.shared.tools import graph_print
 
@@ -35,6 +36,7 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         super(PlotController, self).__init__()
         self.setupUi(self)
         self.plot_core = EccwPlot()
+        self.plot_window = PlotWindow(self.plot_core.figure)
         self.current_dir = QtCore.QDir.homePath()
         self.import_mimetypes = ("Fichiers texte (*.txt *.dat *.csv);;"
                                  "Tout les Fichiers (*.*)")
@@ -101,6 +103,11 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         if self.curve_count == 0:
             self.add_curve_tab()
         self.show()
+
+    def closeEvent(self, event):
+        """Close plot window when closing plot_main."""
+        self.plot_window.close()
+        event.accept()
 
     def set_params(self, **kwargs):
         # There must be as many curves and refpoints as asked to set.
@@ -293,6 +300,8 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
                         self.errors = Errors(out)
                         return
                 self._plot_other_stuffs(selected_params)
+                self.plot_window.update()
+                self.plot_window.show()
             else:
                 self.errors = Errors(errors)
 
@@ -310,6 +319,8 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
                     self.errors = Errors(out)
                     return
                 self._plot_other_stuffs(selected_params)
+                self.plot_window.update()
+                self.plot_window.show()
             else:
                 self.errors = Errors(errors)
 
@@ -347,7 +358,6 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
             self.plot_core.add_legend()
         if selected_params['title']:
             self.plot_core.add_title(selected_params['title'])
-        self.plot_core.show(block=False)
 
     def _format_point_params(self, point_params, no_label=False):
         if point_params['beta']['type'] == 'scalar':

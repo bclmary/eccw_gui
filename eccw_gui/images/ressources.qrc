@@ -10,6 +10,7 @@
   </qresource>
   <qresource prefix="icons">
     <file>python-powered-60x24.png</file>
+    <file>icon_eccw.svg</file>
     <file>icon_eccw_16x16.png</file>
     <file>icon_eccw_24x24.png</file>
     <file>icon_eccw_32x32.png</file>

@@ -15,13 +15,16 @@ from eccw_gui.shared.wrappers import WrapperDict
 from eccw_gui.shared.file_management import EccwFile, open_pdf
 from eccw_gui.shared.tools import graph_print
 
+
 class MainController(QtWidgets.QWidget, Ui_Form, WrapperDict):
     """Main window of ECCW app."""
     def __init__(self, parent=None, **kwargs):
         super(MainController, self).__init__(parent)
         self.setupUi(self)
-        self.setWindowTitle("ECCW")
-        self.set_app_icon()
+        #self.setWindowTitle("ECCW")
+        #self.set_app_icon()
+        #self.app_icon = self._make_app_icon()
+        #self.setWindowIcon(self.app_icon)
         self.current_dir = QtCore.QDir.homePath()
         self.mime_types = ("Fichier eccw (*.%s);;Tout les Fichiers (*.*)"
                            % EccwFile.mime)
@@ -32,6 +35,7 @@ class MainController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         self.tabWidget_main.widget(0).setLayout(layoutC)
         # Set plot tab.
         self.plot = PlotController()
+        #self.plot.plot_window.setWindowIcon(self.app_icon)
         layoutP = QtWidgets.QVBoxLayout()
         layoutP.addWidget(self.plot)
         self.tabWidget_main.widget(1).setLayout(layoutP)
@@ -57,9 +61,16 @@ class MainController(QtWidgets.QWidget, Ui_Form, WrapperDict):
             self.set_params(**kwargs)
         self.show()
 
-    def set_app_icon(self):
+    def closeEvent(self, event):
+        """Close plot window when closing main window."""
+        self.plot.plot_window.close()
+        event.accept()
+
+    def _make_app_icon(self):
         """Set main window icon displayed in pannel, overview mode, etc..."""
-        app_icon = QtGui.QIcon()
+        app_icon = QtGui.QIcon(":/icons/icon_eccw.svg")
+        #app_icon.addFile(QtGui.QPixmap(":/icons/icon_eccw.svg"))
+        #app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw.svg"))
         app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_16x16.png"))
         app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_24x24.png"))
         app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_32x32.png"))
@@ -67,7 +78,7 @@ class MainController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_128x128.png"))
         app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_256x256.png"))
         app_icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_512x512.png"))
-        self.setWindowIcon(app_icon)
+        return app_icon
 
     def click_about(self):
         self.about = About()

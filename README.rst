@@ -245,6 +245,10 @@ Both are found in following dependancies (ubuntu / debian):
 
     | pyqt5-dev-tools
 
+If you want to install Qt-designer for Qt5 on Ubuntu/debian, this app is included in the following package:
+
+    | qttools5-dev-tools
+
 Informations for developpers
 ++++++++++++++++++++++++++++
 

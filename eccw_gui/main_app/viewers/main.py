@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '../uis/main.ui'
 #
-# Created by: PyQt5 UI code generator 5.7
+# Created by: PyQt5 UI code generator 5.10.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -15,6 +15,9 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setKerning(True)
         Form.setFont(font)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_512x512.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Form.setWindowIcon(icon)
         self.verticalLayout_18 = QtWidgets.QVBoxLayout(Form)
         self.verticalLayout_18.setObjectName("verticalLayout_18")
         self.horizontalLayout_topmenu = QtWidgets.QHBoxLayout()
@@ -24,9 +27,9 @@ class Ui_Form(object):
         self.pushButton_Open.setMinimumSize(QtCore.QSize(80, 28))
         self.pushButton_Open.setMaximumSize(QtCore.QSize(80, 28))
         self.pushButton_Open.setBaseSize(QtCore.QSize(80, 28))
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/buttons/button_open.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Open.setIcon(icon)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/buttons/button_open.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Open.setIcon(icon1)
         self.pushButton_Open.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_Open.setObjectName("pushButton_Open")
         self.horizontalLayout_topmenu.addWidget(self.pushButton_Open)
@@ -34,9 +37,9 @@ class Ui_Form(object):
         self.pushButton_Save.setMinimumSize(QtCore.QSize(80, 28))
         self.pushButton_Save.setMaximumSize(QtCore.QSize(80, 28))
         self.pushButton_Save.setBaseSize(QtCore.QSize(80, 28))
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/buttons/button_save.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Save.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap(":/buttons/button_save.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Save.setIcon(icon2)
         self.pushButton_Save.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_Save.setObjectName("pushButton_Save")
         self.horizontalLayout_topmenu.addWidget(self.pushButton_Save)
@@ -54,9 +57,9 @@ class Ui_Form(object):
         self.pushButton_About.setMinimumSize(QtCore.QSize(80, 28))
         self.pushButton_About.setMaximumSize(QtCore.QSize(80, 28))
         self.pushButton_About.setBaseSize(QtCore.QSize(80, 28))
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/buttons/button_about.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_About.setIcon(icon2)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap(":/buttons/button_about.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_About.setIcon(icon3)
         self.pushButton_About.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_About.setObjectName("pushButton_About")
         self.horizontalLayout_topmenu.addWidget(self.pushButton_About)
@@ -64,9 +67,9 @@ class Ui_Form(object):
         self.pushButton_Documentation.setMinimumSize(QtCore.QSize(140, 28))
         self.pushButton_Documentation.setMaximumSize(QtCore.QSize(140, 28))
         self.pushButton_Documentation.setBaseSize(QtCore.QSize(140, 28))
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/buttons/button_documentation.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Documentation.setIcon(icon3)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap(":/buttons/button_documentation.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Documentation.setIcon(icon4)
         self.pushButton_Documentation.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_Documentation.setObjectName("pushButton_Documentation")
         self.horizontalLayout_topmenu.addWidget(self.pushButton_Documentation)
@@ -94,15 +97,15 @@ class Ui_Form(object):
         self.tab_calculator = QtWidgets.QWidget()
         self.tab_calculator.setAutoFillBackground(True)
         self.tab_calculator.setObjectName("tab_calculator")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/tabs/tab_calculate.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.tabWidget_main.addTab(self.tab_calculator, icon4, "")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap(":/tabs/tab_calculate.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.tabWidget_main.addTab(self.tab_calculator, icon5, "")
         self.tab_plot = QtWidgets.QWidget()
         self.tab_plot.setAutoFillBackground(True)
         self.tab_plot.setObjectName("tab_plot")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/tabs/tab_plot.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.tabWidget_main.addTab(self.tab_plot, icon5, "")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap(":/tabs/tab_plot.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.tabWidget_main.addTab(self.tab_plot, icon6, "")
         self.verticalLayout_18.addWidget(self.tabWidget_main)
 
         self.retranslateUi(Form)
@@ -111,7 +114,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "ECCW"))
         self.pushButton_Open.setToolTip(_translate("Form", "Open previously saved session (Crtl+O)"))
         self.pushButton_Open.setText(_translate("Form", "Open"))
         self.pushButton_Open.setShortcut(_translate("Form", "Ctrl+O"))

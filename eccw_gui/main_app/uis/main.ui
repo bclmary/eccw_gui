@@ -16,7 +16,11 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>ECCW</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../images/ressources.qrc">
+    <normaloff>:/icons/icon_eccw_512x512.png</normaloff>:/icons/icon_eccw_512x512.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_18">
    <item>

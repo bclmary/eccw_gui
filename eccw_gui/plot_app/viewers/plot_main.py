@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '../uis/plot_main.ui'
 #
-# Created by: PyQt5 UI code generator 5.7
+# Created by: PyQt5 UI code generator 5.10.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -80,7 +80,6 @@ class Ui_Form(object):
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.tab)
-        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.tabWidget.addTab(self.tab, "")
         self.verticalLayout.addWidget(self.tabWidget)
@@ -171,7 +170,6 @@ class Ui_Form(object):
         self.widget_showParams = QtWidgets.QWidget(Form)
         self.widget_showParams.setObjectName("widget_showParams")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.widget_showParams)
-        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.radioButton_legend = QtWidgets.QRadioButton(self.widget_showParams)
         self.radioButton_legend.setAutoExclusive(False)
@@ -238,9 +236,9 @@ class Ui_Form(object):
         self.pushButton_plotOne.setToolTip(_translate("Form", "Plot current curve and reference points (Crtl+P)"))
         self.pushButton_plotOne.setText(_translate("Form", "Plot"))
         self.pushButton_plotOne.setShortcut(_translate("Form", "Ctrl+P"))
-        self.pushButton_plotAll.setToolTip(_translate("Form", "Plot all curves and points (Crtl+A)"))
+        self.pushButton_plotAll.setToolTip(_translate("Form", "Plot all curves and points (Crtl+Maj+P)"))
         self.pushButton_plotAll.setText(_translate("Form", " Plot all"))
-        self.pushButton_plotAll.setShortcut(_translate("Form", "Ctrl+A"))
+        self.pushButton_plotAll.setShortcut(_translate("Form", "Ctrl+Shift+P"))
 
 import eccw_gui.images.ressources_rc
 

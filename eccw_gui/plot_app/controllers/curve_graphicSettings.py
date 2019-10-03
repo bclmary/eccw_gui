@@ -80,8 +80,8 @@ class CurveDoubleGraphicSettings(VerticalLayout, WrapperDict):
     """
     def __init__(self, **kwargs):
         VerticalLayout.__init__(self)
-        self.normal = CurveGraphicSettings(label="normal")
-        self.inverse = CurveGraphicSettings(label="inverse")
+        self.normal = CurveGraphicSettings(label="normal", color=(0, 0, 1, 1))
+        self.inverse = CurveGraphicSettings(label="inverse", color=(1, 0, 0, 1))
         self.verticalLayout.addWidget(self.normal)
         self.verticalLayout.addWidget(self.inverse)
         # Dictionnary (WrapperDict)

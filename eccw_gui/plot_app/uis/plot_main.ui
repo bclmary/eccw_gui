@@ -515,7 +515,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Plot all curves and points (Crtl+A)</string>
+          <string>Plot all curves and points (Crtl+Maj+P)</string>
          </property>
          <property name="text">
           <string> Plot all</string>
@@ -531,7 +531,7 @@
           </size>
          </property>
          <property name="shortcut">
-          <string>Ctrl+A</string>
+          <string>Ctrl+Shift+P</string>
          </property>
         </widget>
        </item>
