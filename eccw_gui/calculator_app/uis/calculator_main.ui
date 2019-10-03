@@ -155,10 +155,13 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Check for calculate critical surface slope</string>
+           <string>Check for calculate critical surface slope (Alt+L)</string>
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="shortcut">
+           <string>Alt+L</string>
           </property>
           <property name="checked">
            <bool>true</bool>
@@ -174,10 +177,13 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Check for calculate basal slope</string>
+           <string>Check for calculate basal slope (Alt+T)</string>
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="shortcut">
+           <string>Alt+T</string>
           </property>
          </widget>
         </item>
@@ -190,10 +196,13 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Check for calculate basal friction angle</string>
+           <string>Check for calculate basal friction angle (Alt+D)</string>
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="shortcut">
+           <string>Alt+D</string>
           </property>
          </widget>
         </item>
@@ -213,10 +222,13 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Check for calculate bulk friction angle</string>
+           <string>Check for calculate bulk friction angle (Alt+B)</string>
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="shortcut">
+           <string>Alt+B</string>
           </property>
          </widget>
         </item>
@@ -370,7 +382,7 @@
         <string>Check to activate fluids pore pressure parameters</string>
        </property>
        <property name="title">
-        <string>F&amp;luids pore pressure</string>
+        <string>Fluids pore pressure</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -622,7 +634,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Launch calculation (Crtl+G)</string>
+        <string>Launch calculation (Crtl+Enter)</string>
        </property>
        <property name="text">
         <string>Go</string>
@@ -638,7 +650,7 @@
         </size>
        </property>
        <property name="shortcut">
-        <string>Ctrl+G</string>
+        <string>Ctrl+Return</string>
        </property>
       </widget>
      </item>
@@ -663,10 +675,13 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Clear inputs and results fields</string>
+        <string>Clear inputs and results fields (Crtl+Del)</string>
        </property>
        <property name="text">
         <string>Clear</string>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+Del</string>
        </property>
       </widget>
      </item>
@@ -757,7 +772,7 @@ p, li { white-space: pre-wrap; }
  </widget>
  <resources>
   <include location="../../images/ressources.qrc"/>
-  <include location="../../../images/ressources.qrc"/>
+  <include location="../../images/ressources.qrc"/>
  </resources>
  <connections/>
 </ui>

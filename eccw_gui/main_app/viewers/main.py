@@ -85,7 +85,6 @@ class Ui_Form(object):
         font.setWeight(50)
         self.tabWidget_main.setFont(font)
         self.tabWidget_main.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
-        self.tabWidget_main.setToolTip("")
         self.tabWidget_main.setAutoFillBackground(True)
         self.tabWidget_main.setTabPosition(QtWidgets.QTabWidget.South)
         self.tabWidget_main.setTabShape(QtWidgets.QTabWidget.Rounded)
@@ -123,9 +122,8 @@ class Ui_Form(object):
         self.pushButton_Save.setShortcut(_translate("Form", "Ctrl+S"))
         self.pushButton_About.setToolTip(_translate("Form", "About ECCW software"))
         self.pushButton_About.setText(_translate("Form", "About"))
-        self.pushButton_Documentation.setToolTip(_translate("Form", "Display pdf fulll documentation (Crtl+D)"))
+        self.pushButton_Documentation.setToolTip(_translate("Form", "Display pdf fulll documentation"))
         self.pushButton_Documentation.setText(_translate("Form", "Documentation"))
-        self.pushButton_Documentation.setShortcut(_translate("Form", "Ctrl+D"))
         self.tabWidget_main.setTabText(self.tabWidget_main.indexOf(self.tab_calculator), _translate("Form", "Calculator                    "))
         self.tabWidget_main.setTabText(self.tabWidget_main.indexOf(self.tab_plot), _translate("Form", "Plot                              "))
 

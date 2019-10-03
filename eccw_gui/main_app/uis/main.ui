@@ -182,7 +182,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Display pdf fulll documentation (Crtl+D)</string>
+        <string>Display pdf fulll documentation</string>
        </property>
        <property name="text">
         <string>Documentation</string>
@@ -196,9 +196,6 @@
          <width>20</width>
          <height>20</height>
         </size>
-       </property>
-       <property name="shortcut">
-        <string>Ctrl+D</string>
        </property>
       </widget>
      </item>
@@ -220,9 +217,6 @@
      </property>
      <property name="contextMenuPolicy">
       <enum>Qt::DefaultContextMenu</enum>
-     </property>
-     <property name="toolTip">
-      <string/>
      </property>
      <property name="autoFillBackground">
       <bool>true</bool>

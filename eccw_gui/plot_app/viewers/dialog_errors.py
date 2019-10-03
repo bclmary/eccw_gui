@@ -15,6 +15,7 @@ class Ui_Dialog_Errors(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(Dialog_Errors)
         self.verticalLayout.setObjectName("verticalLayout")
         self.textEdit = QtWidgets.QTextEdit(Dialog_Errors)
+        self.textEdit.setReadOnly(True)
         self.textEdit.setObjectName("textEdit")
         self.verticalLayout.addWidget(self.textEdit)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
@@ -36,6 +37,7 @@ class Ui_Dialog_Errors(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog_Errors.setWindowTitle(_translate("Dialog_Errors", "Errors"))
         self.pushButton.setText(_translate("Dialog_Errors", "Ok"))
+        self.pushButton.setShortcut(_translate("Dialog_Errors", "Return"))
 
 
 if __name__ == "__main__":

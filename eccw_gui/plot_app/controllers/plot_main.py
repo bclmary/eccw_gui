@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from os.path import dirname, realpath
-from PyQt5 import QtCore, QtWidgets
+from PyQt5 import QtCore, QtWidgets, QtGui
 from collections import OrderedDict
 from matplotlib.cm import get_cmap
 import csv
@@ -63,6 +63,11 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         self.pushButton_plotOne.clicked.connect(self.plot_one)
         self.pushButton_plotAll.clicked.connect(self.plot_all)
         self.tabWidget.tabBar().tabMoved.connect(self._tab_moved)
+        TabW = self.tabWidget
+        QtWidgets.QShortcut(QtGui.QKeySequence("Alt+Page up"), self,
+                        lambda: TabW.setCurrentIndex(TabW.currentIndex()-1))
+        QtWidgets.QShortcut(QtGui.QKeySequence("Alt+Page down"), self,
+                        lambda: TabW.setCurrentIndex(TabW.currentIndex()+1))
         # Parameters list for dry and fluids cases.
         self.params_list_dry = ('phiB', 'phiD')
         self.params_list_fluids = ('phiB', 'phiD', 'delta_lambdaB',
@@ -459,12 +464,18 @@ class PlotController(QtWidgets.QWidget, Ui_Form, WrapperDict):
             self.plot_core.add_curve(**graphic_settings)
             for point in selected_params['points']:
                 params = self._format_point_params(point, no_label=True)
-                self.plot_core.add_point(**params)
+                try: #DEBUG
+                    self.plot_core.add_point(**params)
+                except RuntimeError:
+                    pass
         for point in selected_params['points']:
             params = self._format_point_params(point)
             # Dummy element that will be used as legend for points to avoid
             # repetition.
-            self.plot_core.add_point(**params)
+            try: #DEBUG
+                self.plot_core.add_point(**params)
+            except RuntimeError:
+                pass
             # Draw vertical or horizontal lines that visualize point intervals
             if self.range_point.value is True:
                 self.plot_core.add_line(**params)

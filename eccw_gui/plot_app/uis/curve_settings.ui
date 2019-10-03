@@ -131,7 +131,7 @@
         <string>Check to activate fluids pore pressure parameters</string>
        </property>
        <property name="title">
-        <string>F&amp;luids pore pressure</string>
+        <string>Fluids pore pressure</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -328,7 +328,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Delete this curve</string>
+          <string>Delete this curve (Alt+Del)</string>
          </property>
          <property name="text">
           <string/>
@@ -336,6 +336,9 @@
          <property name="icon">
           <iconset resource="../../images/ressources.qrc">
            <normaloff>:/buttons/button_close.png</normaloff>:/buttons/button_close.png</iconset>
+         </property>
+         <property name="shortcut">
+          <string>Alt+Del</string>
          </property>
         </widget>
        </item>
@@ -490,10 +493,13 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Add a new point on current curve</string>
+        <string>Add a new point on current curve (Alt+P)</string>
        </property>
        <property name="text">
         <string>+</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+P</string>
        </property>
       </widget>
      </item>

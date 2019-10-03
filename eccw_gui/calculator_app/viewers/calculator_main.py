@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '../uis/calculator_main.ui'
 #
-# Created by: PyQt5 UI code generator 5.7
+# Created by: PyQt5 UI code generator 5.10.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -280,25 +280,30 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.groupBox_parameters.setTitle(_translate("Form", "Select parameter to calculate"))
-        self.radioButton_alpha.setToolTip(_translate("Form", "Check for calculate critical surface slope"))
-        self.radioButton_beta.setToolTip(_translate("Form", "Check for calculate basal slope"))
-        self.radioButton_phiD.setToolTip(_translate("Form", "Check for calculate basal friction angle"))
-        self.radioButton_phiB.setToolTip(_translate("Form", "Check for calculate bulk friction angle"))
+        self.radioButton_alpha.setToolTip(_translate("Form", "Check for calculate critical surface slope (Alt+L)"))
+        self.radioButton_alpha.setShortcut(_translate("Form", "Alt+L"))
+        self.radioButton_beta.setToolTip(_translate("Form", "Check for calculate basal slope (Alt+T)"))
+        self.radioButton_beta.setShortcut(_translate("Form", "Alt+T"))
+        self.radioButton_phiD.setToolTip(_translate("Form", "Check for calculate basal friction angle (Alt+D)"))
+        self.radioButton_phiD.setShortcut(_translate("Form", "Alt+D"))
+        self.radioButton_phiB.setToolTip(_translate("Form", "Check for calculate bulk friction angle (Alt+B)"))
+        self.radioButton_phiB.setShortcut(_translate("Form", "Alt+B"))
         self.label_phiD.setToolTip(_translate("Form", "Basal friction angle [deg]"))
         self.label_phiB.setToolTip(_translate("Form", "Bulk friction angle [deg]"))
         self.label_alpha.setToolTip(_translate("Form", "Critical surface slope [deg]"))
         self.label_beta.setToolTip(_translate("Form", "Basal slope [deg]"))
         self.groupBox_fluids.setToolTip(_translate("Form", "Check to activate fluids pore pressure parameters"))
-        self.groupBox_fluids.setTitle(_translate("Form", "F&luids pore pressure"))
+        self.groupBox_fluids.setTitle(_translate("Form", "Fluids pore pressure"))
         self.label_lamdaB.setToolTip(_translate("Form", "Bulk fluids overpressure ratio"))
         self.label_rhof.setToolTip(_translate("Form", "Volumetric mass density of fluids"))
         self.label_lamdaD.setToolTip(_translate("Form", "Bulk fluids overpressure ratio"))
         self.label_rhosr.setToolTip(_translate("Form", "Volumetric mass density of saturated rock"))
-        self.pushButton_Go.setToolTip(_translate("Form", "Launch calculation (Crtl+G)"))
+        self.pushButton_Go.setToolTip(_translate("Form", "Launch calculation (Crtl+Enter)"))
         self.pushButton_Go.setText(_translate("Form", "Go"))
-        self.pushButton_Go.setShortcut(_translate("Form", "Ctrl+G"))
-        self.pushButton_Clear.setToolTip(_translate("Form", "Clear inputs and results fields"))
+        self.pushButton_Go.setShortcut(_translate("Form", "Ctrl+Return"))
+        self.pushButton_Clear.setToolTip(_translate("Form", "Clear inputs and results fields (Crtl+Del)"))
         self.pushButton_Clear.setText(_translate("Form", "Clear"))
+        self.pushButton_Clear.setShortcut(_translate("Form", "Ctrl+Del"))
         self.textEdit_results.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

@@ -206,9 +206,13 @@ class SwitchLineEdit(QtWidgets.QWidget, Ui_Form_switch, WrapperDict):
             self.scalar.setVisible(True)
             self.focus.set_params(self.scalar.id)
 
-    def set_scalar_visible(self, value):
+    def set_scalar_visible(self, value=True):
         self.pushButton.setChecked(not value)
         self._auto_set_visible()
+
+    def set_focus_on_scalar(self):
+        self.set_scalar_visible(True)
+        self.scalar.lineEdit.setFocus()
 
     def set_params(self, **kwargs):
         # self.id = kwargs.get('id', '')
@@ -249,10 +253,13 @@ class SwitchScalarBound(SwitchLineEdit):
     def __init__(self, **kwargs):
         SwitchLineEdit.__init__(self, BoundLineEdit, **kwargs)
 
-    def set_bound_visible(self, value):
+    def set_bound_visible(self, value=True):
         self.pushButton.setChecked(value)
         self._auto_set_visible()
 
+    def set_focus_on_bound(self):
+        self.set_bound_visible(True)
+        self.multi.lineEdit_min.setFocus()
 
 class SwitchScalarRange(SwitchLineEdit):
     """Switcher widget.
@@ -270,10 +277,13 @@ class SwitchScalarRange(SwitchLineEdit):
     def __init__(self, **kwargs):
         SwitchLineEdit.__init__(self, RangeLineEdit, **kwargs)
 
-    def set_range_visible(self, value):
+    def set_range_visible(self, value=True):
         self.pushButton.setChecked(value)
         self._auto_set_visible()
 
+    def set_focus_on_range(self):
+        self.set_range_visible(True)
+        self.multi.lineEdit_begin.setFocus()
 
 if __name__ == "__main__":
     import sys

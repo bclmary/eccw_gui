@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 from collections import OrderedDict
 
 from eccw_gui.calculator_app.viewers.calculator_main import Ui_Form
@@ -73,6 +73,47 @@ class CalculatorController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         self.groupBox_fluids.clicked.connect(self._fluidsChanged)
         self.pushButton_Clear.clicked.connect(self._clean_all)
         self.pushButton_Go.clicked.connect(self.click_compute)
+        # Shortcuts for edit parameters.
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+L"), self, self.alpha.set_focus_on_scalar
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+Shift+L"), self, 
+            lambda: self._there_can_be_only_one_range_focus(self.alpha)
+        )
+        self.alpha.pushButton.setToolTip(
+            self.alpha.pushButton.toolTip() + " (Crtl+L | Crtl+Shift+L)"
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+T"), self, self.beta.set_focus_on_scalar
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+Shift+T"), self, 
+            lambda: self._there_can_be_only_one_range_focus(self.beta)
+        )
+        self.beta.pushButton.setToolTip(
+            self.beta.pushButton.toolTip() + " (Crtl+T | Crtl+Shift+T)"
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+B"), self, self.phiB.set_focus_on_scalar
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+Shift+B"), self, 
+            lambda: self._there_can_be_only_one_range_focus(self.phiB)
+        )
+        self.phiB.pushButton.setToolTip(
+            self.phiB.pushButton.toolTip() + " (Crtl+B | Crtl+Shift+B)"
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+D"), self, self.phiD.set_focus_on_scalar
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+Shift+D"), self, 
+            lambda: self._there_can_be_only_one_range_focus(self.phiD)
+        )
+        self.phiD.pushButton.setToolTip(
+            self.phiD.pushButton.toolTip() + " (Crtl+D | Crtl+Shift+D)"
+        )
         # Dictionnary (WrapperDict)
         self.dict = OrderedDict([
             ("context",       self.context),
@@ -128,6 +169,11 @@ class CalculatorController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         for Obj in self.param_object_list:
             if Obj is not elt:
                 Obj.set_scalar_visible(True)
+
+    def _there_can_be_only_one_range_focus(self, elt):
+        elt.set_focus_on_range()
+        self._there_can_be_only_one(elt)
+
 
     def set_focus(self, arg):
         for elt in self.focus_object_list:

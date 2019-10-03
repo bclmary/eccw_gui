@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 from collections import OrderedDict
 
 from eccw_gui.plot_app.viewers.curve_settings import Ui_Form
@@ -102,6 +102,29 @@ class CurveController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         for elt in self.param_object_list:
             elt.pushButton.clicked.connect(tmp(elt))
         self.pushButton_kill.clicked.connect(self._set_closed)
+        # Shortcuts for edit parameters.
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+B"), self, 
+            lambda: self._there_can_be_multiple_scalar_focus(self.phiB)
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+Shift+B"), self, 
+            lambda: self._there_can_be_only_one_range_focus(self.phiB)
+        )
+        self.phiB.pushButton.setToolTip(
+            self.phiB.pushButton.toolTip() + " (Crtl+B | Crtl+Shift+B)"
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+D"), self, 
+            lambda: self._there_can_be_multiple_scalar_focus(self.phiD)
+        )
+        QtWidgets.QShortcut(
+            QtGui.QKeySequence("Ctrl+Shift+D"), self, 
+            lambda: self._there_can_be_only_one_range_focus(self.phiD)
+        )
+        self.phiD.pushButton.setToolTip(
+            self.phiD.pushButton.toolTip() + " (Crtl+D | Crtl+Shift+D)"
+        )
         # Dictionnary (WrapperDict)
         self.dict = OrderedDict([
             ("label",         self.label),
@@ -156,6 +179,15 @@ class CurveController(QtWidgets.QWidget, Ui_Form, WrapperDict):
             if Obj is not elt:
                 Obj.set_scalar_visible(True)
         self._auto_set_settings()
+
+    def _there_can_be_only_one_range_focus(self, elt):
+        elt.set_focus_on_range()
+        self._there_can_be_only_one(elt)
+
+    def _there_can_be_multiple_scalar_focus(self, elt):
+        elt.set_focus_on_scalar()
+        self._there_can_be_only_one(elt)
+
 
     def _auto_set_settings(self):
         # Next line solves blinking when switching from a focus to another.
