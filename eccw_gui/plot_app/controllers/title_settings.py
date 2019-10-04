@@ -17,6 +17,7 @@ class TitleEdit(QtWidgets.QWidget, Ui_Form):
     of the argument.
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(TitleEdit, self).__init__()
         self.id = "title"
@@ -41,6 +42,7 @@ class TitleEdit(QtWidgets.QWidget, Ui_Form):
 
 if __name__ == "__main__":
     import sys
+
     try:
         app = QtWidgets.QApplication(sys.argv)
 

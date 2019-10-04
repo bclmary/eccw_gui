@@ -23,6 +23,7 @@ class LineEdit(QtWidgets.QWidget, Ui_Form):
     of the argument.
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(LineEdit, self).__init__()
         self.id = ""
@@ -54,6 +55,7 @@ class StringLineEdit(LineEdit):
     of the argument.
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         LineEdit.__init__(self, *args)
         self.id = "string"
@@ -68,6 +70,7 @@ class ScalarLineEdit(LineEdit):
     of the argument.
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         LineEdit.__init__(self, *args)
         self.id = "scalar"
@@ -87,25 +90,27 @@ class BoundLineEdit(QtWidgets.QWidget, Ui_Form_bound, WrapperDict):
     of the arguments.
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         super(BoundLineEdit, self).__init__()
         self.id = "bound"
         self.setupUi(self)
-        self.min = Wrapper(action=lambda x: self.lineEdit_min.setText(
-                                            str_check(x)),
-                           process=lambda x: None if x == '-inf' else x)
-        self.min.get_params = lambda: float_check(self.lineEdit_min.text(),
-                                                  default=-float('inf'))
-        self.max = Wrapper(action=lambda x: self.lineEdit_max.setText(
-                                            str_check(x)),
-                           process=lambda x: None if x == 'inf' else x)
-        self.max.get_params = lambda: float_check(self.lineEdit_max.text(),
-                                                  default=float('inf'))
+        self.min = Wrapper(
+            action=lambda x: self.lineEdit_min.setText(str_check(x)),
+            process=lambda x: None if x == "-inf" else x,
+        )
+        self.min.get_params = lambda: float_check(
+            self.lineEdit_min.text(), default=-float("inf")
+        )
+        self.max = Wrapper(
+            action=lambda x: self.lineEdit_max.setText(str_check(x)),
+            process=lambda x: None if x == "inf" else x,
+        )
+        self.max.get_params = lambda: float_check(
+            self.lineEdit_max.text(), default=float("inf")
+        )
         # Dictionnary (WrapperDict)
-        self.dict = OrderedDict([
-            ("min", self.min),
-            ("max", self.max),
-        ])
+        self.dict = OrderedDict([("min", self.min), ("max", self.max)])
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -128,25 +133,21 @@ class RangeLineEdit(QtWidgets.QWidget, Ui_Form_range, WrapperDict):
     of the arguments.
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         super(RangeLineEdit, self).__init__()
         self.id = "range"
         self.setupUi(self)
-        self.begin = Wrapper(action=lambda x: self.lineEdit_begin.setText(
-                                              str_check(x)))
+        self.begin = Wrapper(action=lambda x: self.lineEdit_begin.setText(str_check(x)))
         self.begin.get_params = lambda: float_check(self.lineEdit_begin.text())
-        self.step = Wrapper(action=lambda x: self.lineEdit_step.setText(
-                                             str_check(x)))
+        self.step = Wrapper(action=lambda x: self.lineEdit_step.setText(str_check(x)))
         self.step.get_params = lambda: float_check(self.lineEdit_step.text())
-        self.end = Wrapper(action=lambda x: self.lineEdit_end.setText(
-                                            str_check(x)))
+        self.end = Wrapper(action=lambda x: self.lineEdit_end.setText(str_check(x)))
         self.end.get_params = lambda: float_check(self.lineEdit_end.text())
         # Dictionnary (WrapperDict)
-        self.dict = OrderedDict([
-            ("begin", self.begin),
-            ("step",  self.step),
-            ("end",   self.end),
-        ])
+        self.dict = OrderedDict(
+            [("begin", self.begin), ("step", self.step), ("end", self.end)]
+        )
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -169,6 +170,7 @@ class RangeLineEdit(QtWidgets.QWidget, Ui_Form_range, WrapperDict):
 
 class SwitchLineEdit(QtWidgets.QWidget, Ui_Form_switch, WrapperDict):
     """Abstract class."""
+
     def __init__(self, multiLineEdit, **kwargs):
         super(SwitchLineEdit, self).__init__()
         self.setupUi(self)
@@ -185,12 +187,14 @@ class SwitchLineEdit(QtWidgets.QWidget, Ui_Form_switch, WrapperDict):
         # Define pushButton behaviour
         self.pushButton.clicked.connect(self._auto_set_visible)
         # Dictionnary
-        self.dict = OrderedDict([
-            (self.scalar.id, self.scalar),
-            (self.multi.id,  self.multi),
-            ("focus",        self.focus),
-            ("id",           self.id),
-        ])
+        self.dict = OrderedDict(
+            [
+                (self.scalar.id, self.scalar),
+                (self.multi.id, self.multi),
+                ("focus", self.focus),
+                ("id", self.id),
+            ]
+        )
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -226,11 +230,7 @@ class SwitchLineEdit(QtWidgets.QWidget, Ui_Form_switch, WrapperDict):
     def get_select(self):
         params = WrapperDict.get_select(self)
         ID = params["focus"]
-        return OrderedDict([
-            ("id",    params['id']),
-            ("type", ID),
-            ("value", params[ID])
-        ])
+        return OrderedDict([("id", params["id"]), ("type", ID), ("value", params[ID])])
 
     def clear(self):
         self.scalar.clear()
@@ -250,6 +250,7 @@ class SwitchScalarBound(SwitchLineEdit):
     of the arguments.
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         SwitchLineEdit.__init__(self, BoundLineEdit, **kwargs)
 
@@ -260,6 +261,7 @@ class SwitchScalarBound(SwitchLineEdit):
     def set_focus_on_bound(self):
         self.set_bound_visible(True)
         self.multi.lineEdit_min.setFocus()
+
 
 class SwitchScalarRange(SwitchLineEdit):
     """Switcher widget.
@@ -274,6 +276,7 @@ class SwitchScalarRange(SwitchLineEdit):
     of the arguments.
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         SwitchLineEdit.__init__(self, RangeLineEdit, **kwargs)
 
@@ -285,29 +288,35 @@ class SwitchScalarRange(SwitchLineEdit):
         self.set_range_visible(True)
         self.multi.lineEdit_begin.setFocus()
 
+
 if __name__ == "__main__":
     import sys
+
     try:
         app = QtWidgets.QApplication(sys.argv)
 
-#        myapp = LineEdit(10)
+        #        myapp = LineEdit(10)
 
-#        myapp = StringLineEdit("poulpe")
+        #        myapp = StringLineEdit("poulpe")
 
-#        params = {"min":-1, "max":1}
-#        myapp = BoundLineEdit(**params)
+        #        params = {"min":-1, "max":1}
+        #        myapp = BoundLineEdit(**params)
 
-#        params = {"begin": 1, "end": 8, "step": 2}
-#        myapp = RangeLineEdit(**params)
+        #        params = {"begin": 1, "end": 8, "step": 2}
+        #        myapp = RangeLineEdit(**params)
 
-#        params = {"bound": {"min": -1, "max": 1},
-#                  "scalar": 5, "focus": "bound"}
-#        params = {"bound": {"min": '-inf', "max": 'inf'},
-#                  "scalar": 5, "focus": "bound"}
-#        myapp = SwitchScalarBound(**params)
+        #        params = {"bound": {"min": -1, "max": 1},
+        #                  "scalar": 5, "focus": "bound"}
+        #        params = {"bound": {"min": '-inf', "max": 'inf'},
+        #                  "scalar": 5, "focus": "bound"}
+        #        myapp = SwitchScalarBound(**params)
 
-        params = {"range": {"begin": 1, "step": None, "end": 8},
-                  "scalar": 5, "focus": "range", 'id': 'my id'}
+        params = {
+            "range": {"begin": 1, "step": None, "end": 8},
+            "scalar": 5,
+            "focus": "range",
+            "id": "my id",
+        }
         myapp = SwitchScalarRange(**params)
 
         sys.exit(app.exec_())

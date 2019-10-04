@@ -11,6 +11,7 @@ class VerticalLayout(QtWidgets.QWidget, UiV):
     """Vertical layout widget.
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(VerticalLayout, self).__init__()
         self.setupUi(self)
@@ -21,6 +22,7 @@ class HorizontalLayout(QtWidgets.QWidget, UiH):
     """Horizontal layout widget.
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(HorizontalLayout, self).__init__()
         self.setupUi(self)
@@ -29,6 +31,7 @@ class HorizontalLayout(QtWidgets.QWidget, UiH):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     myapp = VerticalLayout()
     sys.exit(app.exec_())

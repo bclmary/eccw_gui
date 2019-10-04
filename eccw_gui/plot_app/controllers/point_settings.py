@@ -12,13 +12,14 @@ from eccw_gui.shared.controllers.spinBox import SpinBox
 from eccw_gui.shared.controllers.colorButton import ColorButton
 from eccw_gui.shared.controllers.comboBox import ComboBoxPoint
 from eccw_gui.shared.controllers.label import Label
-from eccw_gui.shared.controllers.radioButton import RadioButton
+from eccw_gui.shared.controllers.checkBox import CheckBox
 from eccw_gui.shared.wrappers import WrapperDict
 from eccw_gui.shared.tools import graph_print
 
 
 class PointSettings(QtWidgets.QWidget, Ui_Form, WrapperDict):
     """Abstract class."""
+
     def __init__(self, **kwargs):
         super(PointSettings, self).__init__()
         self.setupUi(self)
@@ -41,12 +42,14 @@ class PointSettings(QtWidgets.QWidget, Ui_Form, WrapperDict):
         # Define events
         self.pushButton_kill.clicked.connect(self._setClosed)
         # Dictionnary
-        self.dict = OrderedDict([
-            ("size",  self.size),
-            ("color", self.color),
-            ("style", self.style),
-            ("label", self.label)
-            ])
+        self.dict = OrderedDict(
+            [
+                ("size", self.size),
+                ("color", self.color),
+                ("style", self.style),
+                ("label", self.label),
+            ]
+        )
 
     def _setClosed(self):
         self.closed = True
@@ -65,6 +68,7 @@ class RefPointSettings(PointSettings):
 
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         PointSettings.__init__(self, **kwargs)
         self.beta = ScalarLineEdit()
@@ -72,10 +76,9 @@ class RefPointSettings(PointSettings):
         self.horizontalLayout_beta.addWidget(self.beta)
         self.horizontalLayout_alpha.addWidget(self.alpha)
         # Dictionnary (WrapperDict)
-        self.dict = OrderedDict([
-            ("beta", self.beta),
-            ("alpha", self.alpha)
-            ], **self.dict)
+        self.dict = OrderedDict(
+            [("beta", self.beta), ("alpha", self.alpha)], **self.dict
+        )
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -97,11 +100,12 @@ class CurvePointSettings(PointSettings):
 
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         PointSettings.__init__(self, **kwargs)
         self.beta = SwitchScalarBound()
         self.alpha = SwitchScalarBound()
-        self.sketch = RadioButton(label="sketch")
+        self.sketch = CheckBox(label="sketch")
         self.horizontalLayout_beta.addWidget(self.beta)
         self.horizontalLayout_alpha.addWidget(self.alpha)
         self.horizontalLayout_settings.addWidget(self.sketch)
@@ -109,15 +113,16 @@ class CurvePointSettings(PointSettings):
         self.beta.set_scalar_visible(True)
         self.alpha.set_bound_visible(True)
         # Define pushButton behaviours
-        self.beta.pushButton.clicked.connect(lambda: self._there_must_be_one(
-                                             self.beta, self.alpha))
-        self.alpha.pushButton.clicked.connect(lambda: self._there_must_be_one(
-                                              self.alpha, self.beta))
+        self.beta.pushButton.clicked.connect(
+            lambda: self._there_must_be_one(self.beta, self.alpha)
+        )
+        self.alpha.pushButton.clicked.connect(
+            lambda: self._there_must_be_one(self.alpha, self.beta)
+        )
         # Dictionnary
-        self.dict = OrderedDict([
-            ("beta",  self.beta),
-            ("alpha", self.alpha)
-            ], **self.dict)
+        self.dict = OrderedDict(
+            [("beta", self.beta), ("alpha", self.alpha)], **self.dict
+        )
         self.dict.update([("sketch", self.sketch)])
         # Fill values with kwargs
         if kwargs:
@@ -139,16 +144,33 @@ if __name__ == "__main__":
     try:
         app = QtWidgets.QApplication(sys.argv)
 
-        params = {"beta": '0', "alpha": '3.12', "color": ('0', '1', '0', '1'),
-                  "size": '5', "style": "*", "label": "poulpe"}
+        params = {
+            "beta": "0",
+            "alpha": "3.12",
+            "color": ("0", "1", "0", "1"),
+            "size": "5",
+            "style": "*",
+            "label": "poulpe",
+        }
         myapp1 = RefPointSettings(**params)
 
-        params = {"alpha": {"bound": {"min": '0', "max": '4'}, "scalar": '2',
-                            "focus": "bound"},
-                  "beta": {"bound": {"min": '-1', "max": '1'}, "scalar": '0',
-                           "focus": "scalar"},
-                  "sketch": 'True', "color": ('0', '1', '0', '1'), "size": '5',
-                  "style": "s", "label": "poulpe"}
+        params = {
+            "alpha": {
+                "bound": {"min": "0", "max": "4"},
+                "scalar": "2",
+                "focus": "bound",
+            },
+            "beta": {
+                "bound": {"min": "-1", "max": "1"},
+                "scalar": "0",
+                "focus": "scalar",
+            },
+            "sketch": "True",
+            "color": ("0", "1", "0", "1"),
+            "size": "5",
+            "style": "s",
+            "label": "poulpe",
+        }
         myapp2 = CurvePointSettings(**params)
 
         sys.exit(app.exec_())

@@ -3,10 +3,10 @@
 
 from PyQt5 import QtWidgets
 
-from eccw_gui.shared.viewers.radioButton import Ui_Form
+from eccw_gui.shared.viewers.checkBox import Ui_Form
 
 
-class RadioButton(QtWidgets.QWidget, Ui_Form):
+class CheckBox(QtWidgets.QWidget, Ui_Form):
     """Radio button widget.
 
     Arguments:
@@ -19,7 +19,7 @@ class RadioButton(QtWidgets.QWidget, Ui_Form):
     """
 
     def __init__(self, *args, **kwargs):
-        super(RadioButton, self).__init__()
+        super(CheckBox, self).__init__()
         self.setupUi(self)
         # Fill values with args
         if args:
@@ -31,15 +31,15 @@ class RadioButton(QtWidgets.QWidget, Ui_Form):
     def _set_label(self, **kwargs):
         label = kwargs.get("label", False)
         if label:
-            self.radioButton.setText(label)
+            self.checkBox.setText(label)
 
     def get_params(self):
-        return self.radioButton.isChecked()
+        return self.checkBox.isChecked()
 
     def set_params(self, value):
         if isinstance(value, str):
             value = eval(value)
-        self.radioButton.setChecked(value)
+        self.checkBox.setChecked(value)
 
     def get_select(self):
         return self.get_params()
@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
     try:
         app = QtWidgets.QApplication(sys.argv)
-        myapp = RadioButton("False", label="Poulpe")
+        myapp = CheckBoxContext("Extension")
         sys.exit(app.exec_())
     finally:
         print("params =", myapp.get_params())

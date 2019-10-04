@@ -86,13 +86,13 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Add a new curve (Alt+N)</string>
+          <string>Add a new curve (Ctrl+N)</string>
          </property>
          <property name="text">
           <string>+</string>
          </property>
          <property name="shortcut">
-          <string>Alt+N</string>
+          <string>Ctrl+N</string>
          </property>
         </widget>
        </item>
@@ -152,13 +152,13 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Delete all curves (Alt+Shift+Del)</string>
+          <string>Delete all curves (Ctrl+Shift+Del)</string>
          </property>
          <property name="text">
           <string>Clear all</string>
          </property>
          <property name="shortcut">
-          <string>Alt+Shift+Del</string>
+          <string>Ctrl+Shift+Del</string>
          </property>
         </widget>
        </item>
@@ -276,13 +276,13 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Add a new reference point (Alt+R)</string>
+          <string>Add a new reference point (Ctrl+R)</string>
          </property>
          <property name="text">
           <string>+</string>
          </property>
          <property name="shortcut">
-          <string>Alt+R</string>
+          <string>Ctrl+R</string>
          </property>
         </widget>
        </item>
@@ -301,7 +301,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Reference points</string>
+          <string>&lt;u&gt;R&lt;/u&gt;eference points</string>
          </property>
         </widget>
        </item>
@@ -431,12 +431,12 @@
         <widget class="QWidget" name="widget_showParams" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QRadioButton" name="radioButton_legend">
+           <widget class="QCheckBox" name="checkBox_legend">
             <property name="toolTip">
              <string>Check to add legend on plot</string>
             </property>
             <property name="text">
-             <string>show legend</string>
+             <string>show &amp;legend</string>
             </property>
             <property name="autoExclusive">
              <bool>false</bool>
@@ -444,12 +444,12 @@
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_pointRange">
+           <widget class="QCheckBox" name="checkBox_pointRange">
             <property name="toolTip">
              <string>Check to show range as a light gray line under curve points</string>
             </property>
             <property name="text">
-             <string>show curve point range</string>
+             <string>show curve &amp;point range</string>
             </property>
             <property name="checked">
              <bool>false</bool>

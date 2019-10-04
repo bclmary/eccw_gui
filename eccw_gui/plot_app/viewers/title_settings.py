@@ -49,7 +49,8 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "Title"))
+        self.label.setToolTip(_translate("Form", "plot title (Alt+T)"))
+        self.label.setText(_translate("Form", "<u>T</u>itle"))
 
 
 if __name__ == "__main__":

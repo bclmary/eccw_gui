@@ -14,6 +14,7 @@ class Label(QtWidgets.QWidget, Ui_Form):
 
     This is a Qt derived object.
     """
+
     def __init__(self, *args, **kwargs):
         super(Label, self).__init__()
         self.id = "scalar"
@@ -46,6 +47,7 @@ class Label(QtWidgets.QWidget, Ui_Form):
 
 if __name__ == "__main__":
     import sys
+
     try:
         app = QtWidgets.QApplication(sys.argv)
         myapp = Label("poulpe", bold=True)

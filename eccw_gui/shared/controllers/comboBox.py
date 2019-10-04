@@ -7,11 +7,11 @@ from PyQt5 import QtWidgets
 from eccw_gui.shared.viewers.comboBox_line import Ui_Form as UiLine
 from eccw_gui.shared.viewers.comboBox_point import Ui_Form as UiPoint
 from eccw_gui.shared.viewers.comboBox_colorMap import Ui_Form as UiCmap
-from eccw_gui.shared.viewers.comboBox_context import Ui_Form as UiContext
 
 
 class ComboBox(object):
     """Abstract class."""
+
     parser = dict()
 
     def get_params(self):
@@ -22,9 +22,12 @@ class ComboBox(object):
         if i >= 0:
             self.comboBox.setCurrentIndex(i)
         else:
-            raise TypeError(self.__class__.__name__
-                            + "() gets unknown style argument '"
-                            + str(value)+"'.")
+            raise TypeError(
+                self.__class__.__name__
+                + "() gets unknown style argument '"
+                + str(value)
+                + "'."
+            )
 
     def get_select(self):
         return self.parser[self.get_params()]
@@ -42,14 +45,15 @@ class ComboBoxLine(QtWidgets.QWidget, UiLine, ComboBox):
 
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(ComboBoxLine, self).__init__()
         self.parser = {
-            'continuous':    '-',
-            'dotted':       ':',
-            'dashed':       '--',
-            'dash dotted':  '-.',
-            }
+            "continuous": "-",
+            "dotted": ":",
+            "dashed": "--",
+            "dash dotted": "-.",
+        }
         self.setupUi(self)
         # Fill values with args
         if args:
@@ -72,22 +76,29 @@ class ComboBoxPoint(QtWidgets.QWidget, UiPoint, ComboBox):
 
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(ComboBoxPoint, self).__init__()
         self.setupUi(self)
         # Fill values with args
-        self.shortcuts_parser = {'c': 'circle', 's': 'square', 'd': 'diamond',
-                                 't': 'triangle', '*': 'star', '+': 'cross',
-                                 'p': 'pentagon'}
+        self.shortcuts_parser = {
+            "c": "circle",
+            "s": "square",
+            "d": "diamond",
+            "t": "triangle",
+            "*": "star",
+            "+": "cross",
+            "p": "pentagon",
+        }
         self.parser = {
-            'circle':   'o',
-            'square':   's',
-            'diamond':  'D',
-            'triangle': '^',
-            'star':     '*',
-            'cross':    '+',
-            'pentagon': 'p',
-            }
+            "circle": "o",
+            "square": "s",
+            "diamond": "D",
+            "triangle": "^",
+            "star": "*",
+            "cross": "+",
+            "pentagon": "p",
+        }
         if args:
             self.set_params(*args)
         self.show()
@@ -115,43 +126,21 @@ class ComboBoxColorMap(QtWidgets.QWidget, UiCmap, ComboBox):
 
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(ComboBoxColorMap, self).__init__()
         self.setupUi(self)
         self.parser = {
-            'Gray':     'Greys',
-            'Hot':      'hot',
-            'Winter':   'winter',
-            'Gnuplot':  'gnuplot',
-            'Gnuplot2': 'gnuplot2',
-            'Magma':    'magma',
-            'Inferno':  'inferno',
-            'Plasma':   'plasma',
-            'Viridis':  'viridis',
-            }
-        # Fill values with args
-        if args:
-            self.set_params(*args)
-        self.show()
-
-
-class ComboBoxContext(QtWidgets.QWidget, UiContext, ComboBox):
-    """Combo box widget for tectonic context settings.
-
-    Arguments:
-    Awaits a single string value among the following list
-    * Compression
-    * Extension
-
-    This is a Qt derived object.
-    """
-    def __init__(self, *args):
-        super(ComboBoxContext, self).__init__()
-        self.parser = {
-            'Compression': 'c',
-            'Extension':   'e',
-            }
-        self.setupUi(self)
+            "Gray": "Greys",
+            "Hot": "hot",
+            "Winter": "winter",
+            "Gnuplot": "gnuplot",
+            "Gnuplot2": "gnuplot2",
+            "Magma": "magma",
+            "Inferno": "inferno",
+            "Plasma": "plasma",
+            "Viridis": "viridis",
+        }
         # Fill values with args
         if args:
             self.set_params(*args)
@@ -160,12 +149,12 @@ class ComboBoxContext(QtWidgets.QWidget, UiContext, ComboBox):
 
 if __name__ == "__main__":
     import sys
+
     try:
         app = QtWidgets.QApplication(sys.argv)
-#        myapp = ComboBoxContext("Extension")
-#        myapp = ComboBoxColorMap("Inferno")
-#        myapp = ComboBoxPoint('*')
-        myapp = ComboBoxLine("dashed")
+        myapp = ComboBoxColorMap("Inferno")
+        #        myapp = ComboBoxPoint('*')
+        #        myapp = ComboBoxLine("dashed")
         sys.exit(app.exec_())
     finally:
         print("params =", myapp.get_params())

@@ -30,7 +30,7 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="QRadioButton" name="radioButton">
+    <widget class="QCheckBox" name="checkBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
        <horstretch>0</horstretch>

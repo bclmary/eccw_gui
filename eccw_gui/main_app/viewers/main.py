@@ -115,10 +115,10 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "ECCW"))
         self.pushButton_Open.setToolTip(_translate("Form", "Open previously saved session (Crtl+O)"))
-        self.pushButton_Open.setText(_translate("Form", "Open"))
+        self.pushButton_Open.setText(_translate("Form", "&Open"))
         self.pushButton_Open.setShortcut(_translate("Form", "Ctrl+O"))
         self.pushButton_Save.setToolTip(_translate("Form", "Save current session (Crtl+S)"))
-        self.pushButton_Save.setText(_translate("Form", "Save"))
+        self.pushButton_Save.setText(_translate("Form", "&Save"))
         self.pushButton_Save.setShortcut(_translate("Form", "Ctrl+S"))
         self.pushButton_About.setToolTip(_translate("Form", "About ECCW software"))
         self.pushButton_About.setText(_translate("Form", "About"))

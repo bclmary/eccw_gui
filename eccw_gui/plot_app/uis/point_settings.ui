@@ -159,7 +159,7 @@
  </widget>
  <resources>
   <include location="../../images/ressources.qrc"/>
-  <include location="../../../images/ressources.qrc"/>
+  <include location="../../images/ressources.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -28,6 +28,7 @@ class CurveGraphicSettings(QtWidgets.QWidget, Ui_Form, WrapperDict):
     note: color and colormap keyword arguments are exclusives.
     This is a Qt derived object.
     """
+
     def __init__(self, label=False, **kwargs):
         super(CurveGraphicSettings, self).__init__()
         self.setupUi(self)
@@ -38,8 +39,10 @@ class CurveGraphicSettings(QtWidgets.QWidget, Ui_Form, WrapperDict):
         else:
             color, colormap = False, False
         if color and colormap:
-            raise TypeError("CurveGraphicSettings() awaits 'color' OR"
-                            "'colomap' arguments, not both.")
+            raise TypeError(
+                "CurveGraphicSettings() awaits 'color' OR"
+                "'colomap' arguments, not both."
+            )
         self.labelThick = Label("thickness")
         self.size = SpinBox()
         if colormap:
@@ -53,11 +56,13 @@ class CurveGraphicSettings(QtWidgets.QWidget, Ui_Form, WrapperDict):
         self.horizontalLayout.addWidget(self.color)
         self.horizontalLayout.addWidget(self.style)
         # Dictionnary (WrapperDict)
-        self.dict = OrderedDict([
-            ("thickness", self.size),
-            ("colormap" if colormap else "color", self.color),
-            ("style", self.style)
-        ])
+        self.dict = OrderedDict(
+            [
+                ("thickness", self.size),
+                ("colormap" if colormap else "color", self.color),
+                ("style", self.style),
+            ]
+        )
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -78,6 +83,7 @@ class CurveDoubleGraphicSettings(VerticalLayout, WrapperDict):
 
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         VerticalLayout.__init__(self)
         self.normal = CurveGraphicSettings(label="normal", color=(0, 0, 1, 1))
@@ -85,10 +91,7 @@ class CurveDoubleGraphicSettings(VerticalLayout, WrapperDict):
         self.verticalLayout.addWidget(self.normal)
         self.verticalLayout.addWidget(self.inverse)
         # Dictionnary (WrapperDict)
-        self.dict = OrderedDict([
-            ("normal",  self.normal),
-            ("inverse", self.inverse)
-        ])
+        self.dict = OrderedDict([("normal", self.normal), ("inverse", self.inverse)])
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -113,6 +116,7 @@ class SwitchCurveGraphicSettings(VerticalLayout, WrapperDict):
 
     This is a Qt derived object.
     """
+
     def __init__(self, **kwargs):
         VerticalLayout.__init__(self)
         # Init additional objects
@@ -127,12 +131,14 @@ class SwitchCurveGraphicSettings(VerticalLayout, WrapperDict):
         # Initial state
         self.set_visible_manual("default")
         # Dictionnary (WrapperDict)
-        self.dict = OrderedDict([
-            ("focus",   self.focus),
-            ("default", self.default),
-            ("double",  self.double),
-            ("range",   self.range),
-        ])
+        self.dict = OrderedDict(
+            [
+                ("focus", self.focus),
+                ("default", self.default),
+                ("double", self.double),
+                ("range", self.range),
+            ]
+        )
         # Fill values with kwargs
         if kwargs:
             self.set_params(**kwargs)
@@ -151,14 +157,12 @@ class SwitchCurveGraphicSettings(VerticalLayout, WrapperDict):
     def get_select(self):
         params = WrapperDict.get_select(self)
         ID = params["focus"]
-        return OrderedDict([
-            ("type",  ID),
-            ("value", params[ID])
-            ])
+        return OrderedDict([("type", ID), ("value", params[ID])])
 
 
 if __name__ == "__main__":
     import sys
+
     try:
         app = QtWidgets.QApplication(sys.argv)
 

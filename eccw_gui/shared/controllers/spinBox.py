@@ -16,6 +16,7 @@ class SpinBox(QtWidgets.QWidget, Ui_Form):
 
     This is a Qt derived object.
     """
+
     def __init__(self, *args):
         super(SpinBox, self).__init__()
         self.setupUi(self)
@@ -28,8 +29,12 @@ class SpinBox(QtWidgets.QWidget, Ui_Form):
         return self.doubleSpinBox.value()
 
     def set_params(self, value):
-        errmessage = (self.__class__.__name__ +
-                      "() gets invalid size format '" + str(value) + "'.")
+        errmessage = (
+            self.__class__.__name__
+            + "() gets invalid size format '"
+            + str(value)
+            + "'."
+        )
         try:
             value = float_check(value, default=None)
             if value < 0:
@@ -44,9 +49,10 @@ class SpinBox(QtWidgets.QWidget, Ui_Form):
 
 if __name__ == "__main__":
     import sys
+
     try:
         app = QtWidgets.QApplication(sys.argv)
-        myapp = SpinBox('1.2')
+        myapp = SpinBox("1.2")
         sys.exit(app.exec_())
     finally:
         print("params =", myapp.get_params())

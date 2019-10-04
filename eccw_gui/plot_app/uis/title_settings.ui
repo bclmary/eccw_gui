@@ -59,8 +59,11 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="toolTip">
+      <string>plot title (Alt+T)</string>
+     </property>
      <property name="text">
-      <string>Title</string>
+      <string>&lt;u&gt;T&lt;/u&gt;itle</string>
      </property>
     </widget>
    </item>
