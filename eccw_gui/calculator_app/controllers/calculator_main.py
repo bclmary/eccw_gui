@@ -18,6 +18,7 @@ class CalculatorController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         super(CalculatorController, self).__init__()
         self.setupUi(self)
         # Init local attributs.
+        self.n_digit_rounding = 4
         self.alpha = SwitchScalarRange(id="alpha")
         self.beta = SwitchScalarRange(id="beta")
         self.phiB = SwitchScalarRange(id="phiB")
@@ -236,14 +237,25 @@ class CalculatorController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         self.results.value += txt_result
 
     def _format_results(self, select, results):
-        i = 1 if len(results) == 1 else 0
+        i = 0 if len(results) > 1 else 1
         txt = self._get_resume_params(select)
-        txt += "<table width='" + str((5 - i) * 10) + "%'>"
+        n_rows_max = 5
+        n_chars_per_row = 10
+        txt += (
+            "<table width='"
+            + str((n_rows_max - i) * (n_chars_per_row + self.n_digit_rounding))
+            + "%'>"
+        )
         headers = ("●", "inverse", "normal")
         txt += self._make_result_table_line(headers[i:], arg="style='color: blue'")
         for res in results:
             txt += self._make_result_table_line(
-                [self._str_round(elt, 4) if elt is not None else "-" for elt in res[i:]]
+                [
+                    self._str_round(elt, self.n_digit_rounding)
+                    if elt is not None
+                    else "-"
+                    for elt in res[i:]
+                ]
             )
         txt += "</table>"
         return txt
