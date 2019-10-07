@@ -433,7 +433,7 @@
           <item>
            <widget class="QCheckBox" name="checkBox_legend">
             <property name="toolTip">
-             <string>Check to add legend on plot</string>
+             <string>Check to add legend on plot (Alt+L)</string>
             </property>
             <property name="text">
              <string>show &amp;legend</string>
@@ -446,7 +446,7 @@
           <item>
            <widget class="QCheckBox" name="checkBox_pointRange">
             <property name="toolTip">
-             <string>Check to show range as a light gray line under curve points</string>
+             <string>Check to show range as a light gray line under curve points (Alt+P)</string>
             </property>
             <property name="text">
              <string>show curve &amp;point range</string>

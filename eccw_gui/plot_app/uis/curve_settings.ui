@@ -163,7 +163,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Check to activate fluids pore pressure parameters</string>
+        <string>Check to activate fluids pore pressure parameters (Alt+F)</string>
        </property>
        <property name="title">
         <string>&amp;Fluids pore pressure</string>
@@ -481,7 +481,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Check to draw with separate settings normal and inverse faulting mechanisms</string>
+        <string>Check to draw with separate settings normal and inverse faulting mechanisms (Alt+D)</string>
        </property>
        <property name="text">
         <string>&amp;Distinguish mechanisms</string>
@@ -494,7 +494,7 @@
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string>Check to reverse colormap</string>
+        <string>Check to reverse  (Alt+V)</string>
        </property>
        <property name="text">
         <string>Re&amp;verse colormap</string>
