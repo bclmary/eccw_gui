@@ -13,13 +13,14 @@ def get_data_files():
     if sys.platform.startswith('linux'):
         data_files = [('share/applications', ['scripts/eccw.desktop']),
                       ('share/pixmaps', [
-                        'eccw_gui/images/icon_eccw_16x16.png',
-                        'eccw_gui/images/icon_eccw_24x24.png',
-                        'eccw_gui/images/icon_eccw_32x32.png',
-                        'eccw_gui/images/icon_eccw_48x48.png',
-                        'eccw_gui/images/icon_eccw_128x128.png',
-                        'eccw_gui/images/icon_eccw_256x256.png',
-                        'eccw_gui/images/icon_eccw_512x512.png'
+                        'eccw_gui/images/icon_eccw.svg',
+                        #'eccw_gui/images/icon_eccw_16x16.png',
+                        #'eccw_gui/images/icon_eccw_24x24.png',
+                        #'eccw_gui/images/icon_eccw_32x32.png',
+                        #'eccw_gui/images/icon_eccw_48x48.png',
+                        #'eccw_gui/images/icon_eccw_128x128.png',
+                        #'eccw_gui/images/icon_eccw_256x256.png',
+                        #'eccw_gui/images/icon_eccw_512x512.png'
                         ]),
                       ('share/metainfo', ['scripts/eccw.appdata.xml'])]
     else:

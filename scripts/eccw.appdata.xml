@@ -13,9 +13,9 @@
       Exact Critical Coulomb Wedge : tools to compute and display the exact solution of any parameter of Critical Coulomb Wedge
     </p>
   </description>
-<!--  <screenshots>-->
-<!--​    <screenshot type="default">-->
-<!--​      <image>https://raw.githubusercontent.com/spyder-ide/spyder/master/img_src/screenshot.png</image>-->
-<!--​    </screenshot>-->
-<!--​  </screenshots>-->
+  <screenshots>
+​    <screenshot type="default">
+​      <image>https://raw.githubusercontent.com/bclmary/eccw_gui/master/eccw_gui/images/screen-copy_calculator-app.png</image>
+​    </screenshot>
+​  </screenshots>
 </component>
