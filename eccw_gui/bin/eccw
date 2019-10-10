@@ -1,6 +1,0 @@
-#!/bin/sh
-# This bash script gets full path to itself:
-SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
-# Use this path to launch a python script (using system's python3) one folder backward:
-python3 $SCRIPTPATH/../main.py $@
-

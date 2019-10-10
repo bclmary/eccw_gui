@@ -1,6 +1,6 @@
 include *.rst *.txt *.cfg
 global-exclude *.py[co] *.qrc *.ui
-graft eccw_gui/bin
 include eccw_gui/documentation/ECCW.pdf
-include eccw_gui/images *.py *.png *.svg
+include eccw_gui/images/eccw.ico
+include eccw_gui/images/icon_eccw.svg
 
