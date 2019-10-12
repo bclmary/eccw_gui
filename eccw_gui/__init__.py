@@ -38,6 +38,8 @@ Exact Critical Coulomb Wedge - Graphical User Interface.
 
 import pkg_resources
 
+__year__ = 2019
+
 try:
     # wheel distribution
     eccw_provider = pkg_resources.get_distribution("eccw_gui")._provider
