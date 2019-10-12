@@ -45,6 +45,9 @@ setup(
     },
 #    scripts=[os.path.join('scripts', fname) for fname in SCRIPTS],
     data_files=get_data_files(),
-    package_data={"eccw_gui": ["documentation/ECCW.pdf"],},
+    package_data={"eccw_gui": [
+        "documentation/ECCW.pdf",
+        "windows/eccw.ico",
+    ],},
     cmdclass=CMDCLASS,
 )
