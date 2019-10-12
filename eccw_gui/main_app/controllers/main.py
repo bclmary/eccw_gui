@@ -12,7 +12,7 @@ from eccw_gui.main_app.controllers.dialog_about import About
 from eccw_gui.calculator_app.controllers.calculator_main import CalculatorController
 from eccw_gui.plot_app.controllers.plot_main import PlotController
 from eccw_gui.shared.wrappers import WrapperDict
-from eccw_gui.shared.file_management import EccwFile, open_pdf
+from eccw_gui.shared.file_management import EccwFile, open_documentation
 from eccw_gui.shared.tools import graph_print
 
 
@@ -66,7 +66,7 @@ class MainController(QtWidgets.QWidget, Ui_Form, WrapperDict):
         self.about = About()
 
     def click_doc(self):
-        open_pdf("/eccw_gui/documentation/ECCW.pdf")
+        open_documentation()
 
     # Save and load file management.
 

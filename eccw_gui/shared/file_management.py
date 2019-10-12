@@ -10,9 +10,11 @@ import xmltodict
 from xml.parsers.expat import ExpatError
 import webbrowser
 import sys
+import pkg_resources
+from pprint import pprint
 
-from eccw_gui import  __location__
-from eccw_gui.shared.tools import graph_print
+#from eccw_gui.shared.tools import graph_print
+from eccw_gui.documentation import documentation_path
 
 
 class EccwFile():
@@ -70,7 +72,8 @@ class EccwFile():
         xmlfile.close()
 
     def show(self):
-        graph_print(self.values)
+        pprint(self.values)
+        #graph_print(self.values)
 
     def xml(self, pretty=True):
         values = OrderedDict(self.values)
@@ -82,15 +85,11 @@ class EccwFile():
 
         return xmltodict.unparse({"session": values}, pretty=pretty)
 
-
-def open_pdf(file_name):
-#    file_name = "".join([p for p in sys.path if p[-4:] == "eccw"]
-#                        + [file_name])
-    file_name = __location__ + "/" + file_name
-    webbrowser.open(file_name, new=0, autoraise=True)
+def open_documentation():
+    webbrowser.open(documentation_path, new=0, autoraise=True)
 
 if __name__ == "__main__":
 
     f = EccwFile()
-    f.load("../../tests/test.eccw")
+    f.load("../../tests/data/test.eccw")
     f.show()

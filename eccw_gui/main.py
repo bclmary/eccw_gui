@@ -19,7 +19,7 @@ import argparse
 
 from eccw_gui.main_app.controllers.main import MainController
 from eccw_gui.shared.file_management import EccwFile
-from eccw_gui.shared.file_management import open_pdf
+from eccw_gui.shared.file_management import open_documentation
 from eccw_gui import __version__, __authors__
 
 
@@ -81,9 +81,8 @@ compute and draw the exact solution of critical Coulomb wedge
 
     # Treat parsed commands.
     if inputoptions.doc is True:
-        open_pdf("/eccw_gui/documentation/ECCW.pdf")
+        open_documentation()
         exit()
-
 
     return inputoptions.file
 
