@@ -16,7 +16,7 @@ class Ui_Form(object):
         font.setKerning(True)
         Form.setFont(font)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_512x512.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Form.setWindowIcon(icon)
         self.verticalLayout_18 = QtWidgets.QVBoxLayout(Form)
         self.verticalLayout_18.setObjectName("verticalLayout_18")

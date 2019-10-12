@@ -13,7 +13,7 @@ class Ui_PlotWindow(object):
         PlotWindow.setObjectName("PlotWindow")
         PlotWindow.resize(800, 600)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw_512x512.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icons/icon_eccw.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         PlotWindow.setWindowIcon(icon)
         self.verticalLayout = QtWidgets.QVBoxLayout(PlotWindow)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)

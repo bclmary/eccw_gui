@@ -9,17 +9,12 @@
     <file>illustration_calculator.png</file>
   </qresource>
   <qresource prefix="icons">
-    <file>python-powered-60x24.png</file>
     <file>icon_eccw.svg</file>
-    <file>icon_eccw_16x16.png</file>
-    <file>icon_eccw_24x24.png</file>
-    <file>icon_eccw_32x32.png</file>
-    <file>icon_eccw_48x48.png</file>
-    <file>icon_eccw_256x256.png</file>
-    <file>icon_eccw_512x512.png</file>
-    <file>icon_eccw_128x128.png</file>
+    <file>icon_eccw.png</file>
+    <file>python-powered-60x24.png</file>
     <file>Qt_logo_24x33.png</file>
   </qresource>
+  <qresource prefix="newPrefix"/>
   <qresource prefix="markers">
     <file>marker_circle.png</file>
     <file>marker_cross.png</file>

@@ -64,10 +64,10 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="../../images/ressources.qrc">:/icons/icon_eccw_128x128.png</pixmap>
+          <pixmap resource="../../images/ressources.qrc">:/icons/icon_eccw.png</pixmap>
          </property>
          <property name="scaledContents">
-          <bool>false</bool>
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -324,7 +324,6 @@
   </layout>
  </widget>
  <resources>
-  <include location="../../images/ressources.qrc"/>
   <include location="../../images/ressources.qrc"/>
  </resources>
  <connections/>
