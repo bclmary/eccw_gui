@@ -1,6 +1,4 @@
-include *.rst *.txt *.cfg
-global-exclude *.py[co] *.qrc *.ui
-include eccw_gui/documentation/ECCW.pdf
-include eccw_gui/images/eccw.ico
-include eccw_gui/images/icon_eccw.svg
-
+include *.md *.txt *.rst
+graft eccw_gui
+graft tests
+global-exclude *.py[cod] __pycache__ *.so

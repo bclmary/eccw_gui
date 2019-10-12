@@ -10,15 +10,15 @@ import os
 
 def get_data_files():
     """Return data_files in a platform dependent manner"""
-    data_files = []
     if sys.platform.startswith("linux"):
-        data_files.extend([
+        data_files = [
             ("share/applications", ["scripts/eccw.desktop"]),
-            ("share/pixmaps", ["eccw_gui/images/icon_eccw.svg"]),
+            ("share/pixmaps", ["eccw_gui/images/icon_eccw.png"]),
             ("share/icons", ["eccw_gui/images/icon_eccw.svg"]),
             ("share/metainfo", ["scripts/eccw.appdata.xml"]),
-        ])
+        ]
     else:
+        data_files = []
     return data_files
 
 # Make Linux detect ECCW desktop file
@@ -37,13 +37,14 @@ CMDCLASS = {"install_data": MyInstallData}
 
 setup(
     entry_points={
-        "gui_scripts": ["eccw=eccw_gui.__main__:launch"]
+        "gui_scripts": ["eccw=eccw_gui.__main__:launch"],
         "console_scripts": [
-            "eccw_win_install=eccw_gui.windows.win_post_install:install",
-            "eccw_win_remove=eccw_gui.windows.win_post_install:remove",
+            "eccw_windows_install=eccw_gui.windows.win_post_install:install",
+            "eccw_windows_remove=eccw_gui.windows.win_post_install:remove",
         ]
     },
-    scripts=[os.path.join('scripts', fname) for fname in SCRIPTS],
+#    scripts=[os.path.join('scripts', fname) for fname in SCRIPTS],
     data_files=get_data_files(),
+    package_data={"eccw_gui": ["documentation/ECCW.pdf"],},
     cmdclass=CMDCLASS,
 )
