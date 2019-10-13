@@ -4,4 +4,4 @@
 __all__ = [
     "dialog_about",
     "main",
-          ]
+]

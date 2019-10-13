@@ -24,7 +24,7 @@ class Ui_Form(object):
         self.checkBox.setSizePolicy(sizePolicy)
         self.checkBox.setMinimumSize(QtCore.QSize(0, 28))
         self.checkBox.setMaximumSize(QtCore.QSize(16777215, 28))
-        self.checkBox.setBaseSize(QtCore.QSize(0, 28))
+        self.checkBox.setBaseSize(QtCore.QSize(0, 31))
         self.checkBox.setAutoExclusive(False)
         self.checkBox.setObjectName("checkBox")
         self.horizontalLayout.addWidget(self.checkBox)

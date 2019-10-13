@@ -3,5 +3,4 @@
 
 """
 Base graphic elements used to build the differents parts of the GUI.
-Form implementation generated from reading ui files
 """
