@@ -12,6 +12,7 @@ Version 1.1.1
   * bdist gets desktop installation without root rights on linux
   * bdist gets scripts for manual post-installation on Windows
 * automatize building of python code from Qt .ui and .qrc files
+* automatize building of python distribution
 * add CHANGELOG
 
 Version 1.1.0

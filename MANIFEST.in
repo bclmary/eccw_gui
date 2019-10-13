@@ -1,4 +1,4 @@
 include *.md *.txt *.rst
 graft eccw_gui
 graft tests
-global-exclude *.py[cod] __pycache__ *.so
+global-exclude *.py[cod]
