@@ -1,0 +1,61 @@
+[
+  {
+    "DOI": "10.1029/JB089iB12p10125",
+    "ISSN": "0148-0227",
+    "author": [
+      {
+        "family": "Dahlen",
+        "given": "F. A."
+      }
+    ],
+    "container-title": "Journal of Geophysical Research",
+    "id": "Dahlen1984",
+    "issue": "B12",
+    "issued": {
+      "date-parts": [
+        [
+          1984
+        ]
+      ]
+    },
+    "page": "10125-10133",
+    "title": "Noncohesive Critical Coulomb Wedges: An Exact Solution",
+    "title-short": "Noncohesive Critical Coulomb Wedges",
+    "type": "article-journal",
+    "volume": "89"
+  },
+  {
+    "DOI": "10.1002/2014JB011612",
+    "ISSN": "2169-9356",
+    "URL": "http://dx.doi.org/10.1002/2014JB011612",
+    "author": [
+      {
+        "family": "Yuan",
+        "given": "X. P."
+      },
+      {
+        "family": "Leroy",
+        "given": "Y. M."
+      },
+      {
+        "family": "Maillot",
+        "given": "B."
+      }
+    ],
+    "container-title": "Journal of Geophysical Research: Solid Earth",
+    "id": "Yuan2015",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "keyword": "Mechanics, theory, and modeling, Fractures and faults, Dynamics and mechanics of faulting, Dynamics: gravity and tectonics, Continental tectonics: extensional, tectonic extension, gravitational collapse, maximum strength theorem, limit analysis, optimization, cohesive materials",
+    "page": "1833-1854",
+    "title": "Tectonic and gravity extensional collapses in overpressured cohesive and frictional wedges",
+    "type": "article-journal",
+    "volume": "120"
+  }
+]

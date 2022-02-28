@@ -1,0 +1,243 @@
+/* --- TITLE STYLE --- */
+
+.title,
+.subtitle,
+.author,
+.publisher,
+.date {
+    text-align: center;
+}
+.title {
+    font-size: 210%;
+    margin-bottom: 0;
+    border-bottom: 0;  
+}
+.subtitle {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 130%;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 6px solid black;
+} 
+.publisher {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.date {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* --- TOC STYLE --- */
+
+#toc-title {
+    text-align: center;  
+}
+
+/* --- GENERAL STYLE --- */
+
+body{ 
+    text-align: justify;
+    font-family: Dejavu Serif, serif;
+}
+/* headers */
+h1, h2, h3, h4 {
+    font-family: Dejavu Sans, sans;
+}
+h1 {
+    font-size: 130%;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 6px solid black;
+    padding-bottom: 0.25rem;
+}
+h2 {
+    font-size: 120%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 110%;    
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+h4 {
+    font-size: 105%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; 
+}
+h4 .header-section-number{
+    display: none;  
+}
+.header-section-number {
+    margin-right: 0.25rem;
+}
+/* paragraphs */
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.25rem;
+}
+/* lists */
+dl, ol, ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+ol, ul {
+    padding-left: 2rem;  
+}
+li {
+    margin: 0.25rem auto;
+}
+dt {
+    font-weight: bold;
+    margin-bottom: -0.5rem;
+}
+/* links */
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+/* FIGURES STYLE */
+figure {
+    text-align: center;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+figure figcaption {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+    font-style: italic;
+    font-size: 85%;
+}
+
+/* --- TABLES STYLE --- */
+
+table caption {
+    text-align: justify;
+    font-style: italic;
+    font-size: 85%;
+    margin-left: 2rem;
+    margin-right:  2rem;
+    margin-bottom: 0.25rem;
+}
+table {
+    margin: 1rem auto;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    table-layout: auto;
+}
+table th {
+    padding: 0.25rem;
+    border-bottom: 1px solid black;
+}
+table td {
+    padding: 0.25rem;
+}
+
+/* --- ADMONITIONS STYLE --- */
+
+.tip:before,
+.attention:before {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+.tip:before{
+    content: "tip"; 
+}
+.attention:before {
+    content: "Attention";
+}
+.tip, 
+.attention {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.attention {
+    background-color: rgb(255, 220, 220);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.tip {
+    background-color: rgb(221, 255, 220);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* --- CODE BLOCKS STYLE --- */
+
+p > code, 
+dt > code, 
+td > code, 
+li > code,
+ol > code {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: Dejavu Sans Mono, monospace;
+    font-size: 80%;
+    padding: 0.05rem 0.2rem;
+    border-radius: 0.25rem;
+}
+pre {
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+}
+.attention pre,
+.tip pre {
+    margin-left: 0.75rem; 
+    margin-right: 0.75rem; 
+}
+.sourceCode {
+    background-color: white;
+    overflow: hidden;
+}
+
+/* --- KEYBOARD STYLE --- */
+
+kbd {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom-width: 3px;
+    font-family: Dejavu Sans Mono, monospace;
+    font-size: 80%;
+    padding: 0rem 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* --- FOOTNOTES --- */
+
+.footnotes {
+    font-size: 85%;
+}
+
+.references:before {
+    content: "References"; 
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.references {
+    border-top: 1px solid black;
+    margin-top: 1rem; 
+    padding-top: 1rem;
+}
+
+.csl-entry{
+    padding-bottom: 0.5rem; 
+}
