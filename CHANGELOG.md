@@ -1,6 +1,15 @@
 History of changes
 ==================
 
+Version 1.1.2
+-------------
+
+* Convert embedded documentation from pdf to epub. 
+  Since early 2022, applications with embdded pdf are forbidden by 
+  some Windows™ protections. 
+* Replace obsolescent `pkg_resources` by `importlib` package for 
+  metadata introspection.
+
 Version 1.1.1
 -------------
 

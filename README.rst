@@ -78,6 +78,7 @@ Windows
 
   * In the shell, type the following command::
 
+      pip install --upgrade pip  
       pip install eccw-gui
 
 * ECCW is then available from the main Windows menu by taping ``eccw`` or from a shell by taping ``python -m eccw_gui``.
@@ -98,6 +99,7 @@ Linux
 
 2. Install *ECCW* with the following command::
 
+      $ pip3 install --upgrade pip
       $ pip3 install eccw-gui
 
 3. *ECCW* is then available from the main menu under the name **eccw**.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*-coding:utf-8 -*
 
-from setuptools import setup, find_packages
+from setuptools import setup 
 import sys
 from distutils.command.install_data import install_data
 
@@ -46,7 +46,7 @@ setup(
 #    scripts=[os.path.join('scripts', fname) for fname in SCRIPTS],
     data_files=get_data_files(),
     package_data={"eccw_gui": [
-        "documentation/ECCW.pdf",
+        "documentation/ECCW.epub",
         "windows/eccw.ico",
     ],},
     cmdclass=CMDCLASS,
