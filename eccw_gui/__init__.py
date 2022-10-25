@@ -36,10 +36,15 @@ Exact Critical Coulomb Wedge - Graphical User Interface.
 
 """
 
-__year__ = 2019
+__year__ = 2022
+
 
 try:
-    from importlib.metadata import metadata
+    try:
+        from importlib.metadata import metadata
+    except ImportError:  # Python < 3.10 (backport)
+        from importlib_metadata import metadata
+
     mdatas = dict(metadata("eccw_gui").items())
     __version__ = mdatas["Version"]
     __license__ = mdatas["License"]
@@ -53,3 +58,4 @@ except :
     __url__ = ""
     __authors__ = ""
     __contact__ = ""
+
